@@ -1,36 +1,35 @@
 <template>
   <v-app>
-    <v-app-bar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        text
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
-    </v-app-bar>
-
     <v-content>
-      <HelloWorld/>
+      <v-row>
+        <v-col>
+          <app-grid :cars="cars"></app-grid>
+        </v-col>
+      </v-row>
     </v-content>
+    <app-nav></app-nav>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Navigation from './components/Navigation';
+import Card from './components/Card';
+import { cars } from './assets/cars';
+import Grid from './components/Grid';
+
+console.log(cars)
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    'app-nav': Navigation,
+    'app-card': Card,
+    'app-grid': Grid
   },
-  data: () => ({
-    //
-  }),
+  data: () => {
+    return {
+      cars
+    }
+  },
 };
 </script>
