@@ -1,30 +1,35 @@
 <template>
-  <v-app>
+  <v-app class="pt-0">
+    <app-top-nav></app-top-nav>
     <v-content>
       <v-row>
+
         <v-col>
-          <app-grid :cars="cars"></app-grid>
+          <v-row>
+            <app-drop></app-drop>
+            <app-grid :cars="cars"></app-grid>
+          </v-row>
         </v-col>
+
       </v-row>
     </v-content>
-    <app-nav></app-nav>
   </v-app>
 </template>
 
 <script>
-import Navigation from './components/Navigation';
 import Card from './components/Card';
 import { cars } from './assets/cars';
 import Grid from './components/Grid';
-
-console.log(cars)
+import DropDown from './components/DropDown';
+import TopNav from './components/TopNav';
 
 export default {
   name: 'App',
   components: {
-    'app-nav': Navigation,
     'app-card': Card,
-    'app-grid': Grid
+    'app-grid': Grid,
+    'app-drop': DropDown,
+    'app-top-nav': TopNav
   },
   data: () => {
     return {
@@ -33,3 +38,6 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+</style>

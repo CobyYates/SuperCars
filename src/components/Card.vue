@@ -1,6 +1,7 @@
 <template>
-  <v-card class="mx-auto" max-width="344">
-    <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px"></v-img>
+<v-hover v-slot:default="{ hover }">
+  <v-card class="mx-auto" max-width="344" :elevation="hover ? 12 : 2">
+    <v-img src= car.image></v-img>
 
     <v-card-title>
       <div>{{ car.year }} {{ car.make }} {{ car.model }}</div>
@@ -46,6 +47,7 @@
       </div>
     </v-expand-transition>
   </v-card>
+</v-hover>
 </template>
 
 <script>

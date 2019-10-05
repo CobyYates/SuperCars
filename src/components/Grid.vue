@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col sm="3" v-for="car in cars" :key="car.price">
-        <app-card :car="car"></app-card>
+          <app-card :car="car"></app-card>
       </v-col>
     </v-row>
   </v-container>
