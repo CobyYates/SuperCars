@@ -1,7 +1,7 @@
 <template>
 <v-hover v-slot:default="{ hover }">
   <v-card class="mx-auto" max-width="344" :elevation="hover ? 12 : 2">
-    <v-img src= car.image></v-img>
+    <v-img :src="car.image"></v-img>
 
     <v-card-title>
       <div>{{ car.year }} {{ car.make }} {{ car.model }}</div>
