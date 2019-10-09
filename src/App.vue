@@ -12,6 +12,7 @@
         </v-col>
 
       </v-row>
+      <app-footer></app-footer>
     </v-content>
   </v-app>
 </template>
@@ -22,6 +23,7 @@ import { cars } from './assets/cars';
 import Grid from './components/Grid';
 import DropDown from './components/DropDown';
 import TopNav from './components/TopNav';
+import Footer from './components/Footer';
 
 export default {
   name: 'App',
@@ -29,7 +31,8 @@ export default {
     'app-card': Card,
     'app-grid': Grid,
     'app-drop': DropDown,
-    'app-top-nav': TopNav
+    'app-top-nav': TopNav,
+    'app-footer': Footer
   },
   data: () => {
     return {

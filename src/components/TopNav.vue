@@ -4,7 +4,7 @@
       <a href="#">
         <img class="logo" src="https://i.imgur.com/a8JzMHo.png" alt="">
       </a>
-      <v-toolbar-title>Car Specs</v-toolbar-title>
+      <v-toolbar-title>The Garage</v-toolbar-title>
 
       <div class="flex-grow-1"></div>
 

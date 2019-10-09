@@ -237,17 +237,43 @@ export const cars = [
         "sixty": "1.9",
         "price": "250,000"
     },
-    // {
-    //     "make": "",
-    //     "model": "",
-    //     "year": "",
-    //     "top_speed": "",
-    //     "power": "",
-    //     "weight": "",
-    //     "image": "",
-    //     "engine": "",
-    //     "torque": "",
-    //     "sixty": "",
-    //     "price": ""
-    // },
+    {
+        "make": "Tesla",
+        "model": "Model S P100D",
+        "year": "2019",
+        "top_speed": "163",
+        "power": "762",
+        "weight": "4,941",
+        "image": "https://i.imgur.com/9Hku74H.jpg",
+        "engine": "Electric",
+        "torque": "792",
+        "sixty": "2.4",
+        "price": "133,000"
+    },
+    {
+        "make": "Fiskar",
+        "model": "Revero",
+        "year": "2019",
+        "top_speed": "125",
+        "power": "403",
+        "weight": "5,399",
+        "image": "https://i.imgur.com/dmIvFns.jpg",
+        "engine": "Electric",
+        "torque": "981",
+        "sixty": "4.5",
+        "price": "169,000"
+    },
+    {
+        "make": "",
+        "model": "",
+        "year": "",
+        "top_speed": "",
+        "power": "",
+        "weight": "",
+        "image": "",
+        "engine": "",
+        "torque": "",
+        "sixty": "",
+        "price": ""
+    },
 ]

@@ -1,12 +1,20 @@
 <template>
   <v-container>
-    <p>Filter</p>
-
-        <v-overflow-btn
-          class="my-2"
-          :items="filter"
-          label="Specs"
-        ></v-overflow-btn>
+    <v-row>
+      <v-col class="sm-4">
+        <p>Sort by:</p>
+        <v-overflow-btn :items="filter" label="Specs" ></v-overflow-btn>
+        </v-col>
+      <!-- <v-col>
+        <p>Filter by:</p>
+        <v-overflow-btn :items="filter" label="Specs" ></v-overflow-btn>
+        </v-col>
+      <v-col>
+        <p>Filter by:</p>
+        <v-overflow-btn :items="filter" label="Specs" ></v-overflow-btn>
+        </v-col> -->
+    </v-row>
+    
   </v-container>
 </template>
 
