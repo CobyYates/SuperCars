@@ -34,11 +34,9 @@ export default {
     'app-top-nav': TopNav,
     'app-footer': Footer
   },
-  data: () => {
-    return {
-      cars
-    }
-  },
+  data: () => ({
+    cars
+  }),
 };
 </script>
 

@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { cars } from './assets/cars';
+// import { cars } from './assets/cars';
 
 export default {
   data: () => ({
@@ -35,5 +35,6 @@ export default {
         return 0
       })
     }
+  }
 };
 </script>
