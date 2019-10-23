@@ -19,16 +19,21 @@
 </template>
 
 <script>
+import { cars } from './assets/cars';
+
 export default {
   data: () => ({
     filter: ['Price', 'Engine', 'HP', 'Torque', '0-60', 'Top Speed', 'Weight']
   }),
-  // methods: {
-  //   filterBy() {
-  //     if(filter == 'Price'){
-  //       this.cars.sort((a, b) => a.price > b.price ? 1 : -1);
-  //     }
-  //   }
-  // }
+  methods: {
+    priceSort: function() {
+      return this.cars.sort(function(a, b) {
+        var x = a.price
+        var y = b.price
+        if (x < y) {return -1}
+        if (x > y) {return 1}
+        return 0
+      })
+    }
 };
 </script>
