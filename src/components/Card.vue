@@ -9,37 +9,9 @@
     </v-card-title>
 
     <v-card-actions>
-      <!-- Code for making a carousel popup -->
-      <!-- <v-dialog v-model="dialog" width="500">
-      <template v-slot:activator="{ on }">
-        <v-btn text v-on="on" color="teal accent-3">
-          Details
-        </v-btn>
-      </template>
-
-      <v-card>
-        <v-card-title class="headline teal" primary-title>
-          {{ car.year }} {{ car.make }} {{ car.model }}
-        </v-card-title>
-
-      <v-carousel hide-delimiters>
-        <v-carousel-item v-for="(car,i) in cars" :key="i" :src="car.images.image"></v-carousel-item>
-      </v-carousel>
-
-        <v-divider></v-divider>
-
-        <v-card-actions>
-          <div class="flex-grow-1"></div>
-          <v-btn color="primary" text @click="dialog = false">
-            Done
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog> -->
-
-      <!--  -->
-
-      <div class="flex-grow-1"></div>
+     <div class="flex-grow-1">
+       <v-btn text>Add to Garage</v-btn>
+     </div>
 
       <v-btn icon @click="show = !show">
         <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
@@ -83,7 +55,9 @@ export default {
   props: ["car"],
   data: () => ({
     show: false,
-    dialog: false
+    dialog: false,
+    emptyIcon: 'mdi-garage-outline',
+    fullIcon: 'mdi-garage',
   }),
   components: {
     'app-card-expand': CardExpand

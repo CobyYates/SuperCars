@@ -6,7 +6,6 @@
 
         <v-col>
           <v-row>
-            <app-drop></app-drop>
             <app-grid :cars="cars"></app-grid>
           </v-row>
         </v-col>
@@ -21,7 +20,6 @@
 import Card from './components/Card';
 import { cars } from './assets/cars';
 import Grid from './components/Grid';
-import DropDown from './components/DropDown';
 import TopNav from './components/TopNav';
 import Footer from './components/Footer';
 
@@ -30,7 +28,6 @@ export default {
   components: {
     'app-card': Card,
     'app-grid': Grid,
-    'app-drop': DropDown,
     'app-top-nav': TopNav,
     'app-footer': Footer
   },
