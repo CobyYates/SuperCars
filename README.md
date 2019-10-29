@@ -1,10 +1,8 @@
-# super-cars
-Final VueJS Project for DGM 3790 RIA 1
+# Vue.js project using Vuetify
 
-## Project setup
-```
-npm install
-```
+
+## Effectively use conditional logic and JavaScript array methods to render large lists.
+
 
 ### Compiles and hot-reloads for development
 ```
