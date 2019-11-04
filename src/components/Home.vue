@@ -1,0 +1,67 @@
+<template>
+      <v-content>
+    <v-row>
+        <v-col class="pt-0 pb-12">
+            <v-parallax
+            height="500"
+            src="https://d1i1eo6qmdfmdv.cloudfront.net/upload/site/pages/newslider_otherpages/DSC01639.jpg"
+            justify="center" align="center"
+            ><h1 class="text-center">The Garage</h1>
+            <h2 class="text-center">where you build your dream garage</h2></v-parallax>
+        </v-col>
+    </v-row>
+
+    <v-row class="text-center pb-12">
+        <v-col align="center">
+            <h3>Step 1</h3>
+            <p>Select garage size</p>
+            <p><i class="fas fa-warehouse"></i></p>        
+        </v-col>
+        <v-col align="center">
+            <h3>Step 2</h3>
+            <p>Select dream cars</p>
+            <p><i class="fas fa-car"></i></p>
+        </v-col>
+        <v-col align="center">
+            <h3>Step 3</h3>
+            <p>Hire driver or choose copilot</p>
+            <p><i class="fas fa-users"></i></p>
+        </v-col>
+        <v-col align="center">
+            <h3>Step 4</h3>
+            <p>Save your garage</p>
+            <p><i class="fas fa-save"></i></p>
+        </v-col>
+    </v-row>
+
+    <v-row>
+        <v-col class="pb-0">
+            <v-parallax
+            height="400"
+            src="http://ddaudio.com/wp-content/uploads/2016/01/carbonfiber-header-black-1.jpg">
+            <v-row align="center">
+                <v-col align="center">
+                    <v-btn x-large color="teal">START BUILDING</v-btn>
+                </v-col>
+            </v-row>
+            </v-parallax>
+        </v-col>
+    </v-row>
+        
+    </v-content>
+</template>
+
+<script>
+
+export default {
+  components: {
+  },
+};
+</script>
+
+<style scoped>
+i {
+    font-size: 100px;
+    color: rgb(66, 135, 214);
+}
+</style>

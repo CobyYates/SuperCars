@@ -1,10 +1,13 @@
 <template>
-  <form class="mx-auto">
+<v-row align="center">
+  <v-col align="center">
+    <form class="mx-auto pt-12">
     <v-text-field
       v-model="name"
       :error-messages="nameErrors"
       :counter="15"
       label="Name"
+      class="pb-12"
       required
       @input="$v.name.$touch()"
       @blur="$v.name.$touch()"
@@ -13,6 +16,7 @@
       v-model="email"
       :error-messages="emailErrors"
       label="E-mail"
+      class="pb-12"
       required
       @input="$v.email.$touch()"
       @blur="$v.email.$touch()"
@@ -21,6 +25,7 @@
       v-model="checkbox"
       :error-messages="checkboxErrors"
       label="Do you agree?"
+      class="pb-12"
       required
       @change="$v.checkbox.$touch()"
       @blur="$v.checkbox.$touch()"
@@ -29,6 +34,9 @@
     <v-btn class="mr-4" @click="submit">submit</v-btn>
     <v-btn @click="clear">clear</v-btn>
   </form>
+  </v-col>
+</v-row>
+  
 </template>
 
 <script>
@@ -101,6 +109,6 @@ import { required, maxLength, email } from 'vuelidate/lib/validators'
 
 <style scoped>
 form {
-  width: 50%;
+  width: 40%;
 }
 </style>
