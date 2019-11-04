@@ -8,8 +8,9 @@
           <v-row align="center">
             <v-col align="center">
               <h2 class="pb-4 display-4">HYPERCAR:</h2>
-          <p>top-tier supercar that bests all or most of the elements of standard supercars including, </p>
-          <p>not limited to, acceleration, price, rarity, handling, top speed, sound and appearance</p>
+          <p>"top-tier supercar that bests all or most of the elements of standard supercars including, </p>
+          <p>not limited to, acceleration, price, rarity, handling, top speed, sound and appearance - 
+            <a id="link" href="https://www.zeroto60times.com/2013/01/supercars-vs-hypercars-definition/" target="_blank">Chris Edwards</a></p>
             </v-col>
           </v-row>          
         </v-parallax>
@@ -38,3 +39,10 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+  #link {
+    text-decoration: none;
+    color: white;
+  }
+</style>

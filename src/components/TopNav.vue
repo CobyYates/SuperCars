@@ -49,8 +49,8 @@ export default {
   height: 50px;
   padding-right: 20px;
 }
-v-btn li {
-  list-style-type: none;
+v-btn {
+  height: 100%;
 }
 v-toolbar__content {
   padding-right: 0;
