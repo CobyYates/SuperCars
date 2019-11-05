@@ -19,7 +19,12 @@ new Vue({
 }).$mount('#app')
 
 /* 
-Setup navigation
+Setup navigation with names and path (Nov 4 time: 3:37 in Zoom)
+{
+  path: '/remote'
+  name: 'remote'
+  components: remote
+}
 Add different pages
 add router in app.vue
 */

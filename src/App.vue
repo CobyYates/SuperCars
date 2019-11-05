@@ -8,7 +8,7 @@
           <!-- <app-grid :cars="cars"></app-grid> -->
         </v-col>
       </v-row>
-          <app-footer></app-footer>
+          <app-footer/>
     </v-content>
   </v-app>
 </template>

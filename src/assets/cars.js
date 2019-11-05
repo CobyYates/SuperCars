@@ -2,7 +2,7 @@ export const cars = [
     {
         "make": "Koenigsegg",
         "model": "Agera RS",
-        "year": "2015-2018",
+        "year": "2018",
         "top_speed": "278",
         "power": "1,160",
         "weight": "3,075",
