@@ -22,7 +22,7 @@
                     </v-row>
                     <v-row>
                         <v-col class="d-flex justify-center">
-                            <v-radio color="red" value="radio"></v-radio>
+                            <v-radio color="teal accent-4" value="radio"></v-radio>
                         </v-col>
                     </v-row>
                 </v-card>
@@ -41,5 +41,7 @@ export default {
 </script>
 
 <style scoped>
-
+h2 {
+    color: #555;
+}
 </style>

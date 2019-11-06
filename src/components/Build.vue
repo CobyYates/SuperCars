@@ -1,12 +1,12 @@
 <template>
   <div>
-    <v-row>
+    <v-row class="back">
       <v-col sm="10">
-        <!-- <app-garage></app-garage> -->
+          <!-- <app-garage></app-garage> -->
         <app-cars></app-cars>
         <app-people></app-people>
       </v-col>
-      <hr />
+      <hr>
       <v-col>
         <v-row>
           <v-col class="d-flex flex-column">
@@ -17,7 +17,7 @@
             </v-row>
             <v-row>
               <v-col class="d-flex justify-center">
-                <v-btn @click="getPeople" color="primary" class="mb-12">NEXT STEP</v-btn>
+                <v-btn @click="getPeople" color="teal accent-4" class="mb-12">NEXT STEP</v-btn>
               </v-col>
             </v-row>
           </v-col>

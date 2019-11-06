@@ -10,7 +10,7 @@
         <v-col sm="3" v-for="car in cars" :key="car.price">
           <app-card :car="car"></app-card>
           <div class="flex-grow-1">
-            <v-btn class="mt-4" small color="error">Add to Garage</v-btn>
+            <v-btn class="mt-4" small color="teal accent-4">Add to Garage</v-btn>
           </div>
         </v-col>
       </v-row>
@@ -33,4 +33,7 @@ export default {
 </script>
 
 <style scoped>
+h2 {
+    color: #555;
+}
 </style>
