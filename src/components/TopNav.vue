@@ -1,9 +1,12 @@
 <template>
   <div>
     <v-toolbar dark class="mb-0">
-      <a href="#">
-        <img class="logo" src="https://i.imgur.com/a8JzMHo.png" alt />
-      </a>
+      <router-link to="/" active-class="active" exact>
+        <a href="#">
+          <img class="logo" src="https://i.imgur.com/a8JzMHo.png" alt />
+        </a>
+      </router-link>
+      
       <v-toolbar-title>The Garage</v-toolbar-title>
 
       <div class="flex-grow-1"></div>

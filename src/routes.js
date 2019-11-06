@@ -1,5 +1,5 @@
 import Home from './components/Home.vue'
-import Build from './components/Grid.vue'
+import Build from './components/Build.vue'
 import Grid from './components/Grid.vue'
 import Contact from './components/Form.vue'
 

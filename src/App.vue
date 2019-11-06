@@ -5,7 +5,6 @@
       <v-row>
         <v-col class="pb-0 pt-0">
           <router-view></router-view>
-          <!-- <app-grid :cars="cars"></app-grid> -->
         </v-col>
       </v-row>
           <app-footer/>

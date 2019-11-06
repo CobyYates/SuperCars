@@ -9,10 +9,6 @@
     </v-card-title>
 
     <v-card-actions>
-     <div class="flex-grow-1">
-       <v-btn text>Add to Garage</v-btn>
-     </div>
-
       <v-btn icon @click="show = !show">
         <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
       </v-btn>
