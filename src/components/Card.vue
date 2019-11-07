@@ -63,6 +63,7 @@ export default {
 
 <style scoped>
   .carTitle {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
   }
 </style>

@@ -1,13 +1,13 @@
 <template>
   <v-content align="center">
-    <v-container :cars="cars">
+    <v-container>  <!-- :cars="cars" -->
       <v-row>
         <v-col class="mt-12">
           <h2>Add cars to your garage</h2>
         </v-col>
       </v-row>
       <v-row>
-        <v-col sm="3" v-for="car in cars" :key="car.price">
+        <v-col sm="3" v-for="car in cars">
           <app-card :car="car"></app-card>
           <div class="flex-grow-1">
             <v-btn class="mt-4" small color="teal accent-4">Add to Garage</v-btn>

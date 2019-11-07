@@ -3,7 +3,7 @@
     <v-row class="back">
       <v-col sm="10">
           <!-- <app-garage></app-garage> -->
-        <app-cars></app-cars>
+        <!-- <app-cars></app-cars> -->
         <app-people></app-people>
       </v-col>
       <hr>
@@ -17,7 +17,7 @@
             </v-row>
             <v-row>
               <v-col class="d-flex justify-center">
-                <v-btn @click="getPeople" color="teal accent-4" class="mb-12">NEXT STEP</v-btn>
+                <v-btn color="teal accent-4" class="mb-12">NEXT STEP</v-btn>
               </v-col>
             </v-row>
           </v-col>
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-// import axios from 'axios'
+import axios from 'axios'
 import Garage from "./Garage";
 import Cars from "./Cars";
 import People from "./People";
@@ -39,16 +39,7 @@ export default {
     "app-garage": Garage,
     "app-cars": Cars,
     "app-people": People
-  }
-  //   methods: {
-  //     getPeople() {
-  //       axios.get('https://uinames.com/api/')
-  //       .then(response => {
-  //         console.log(response.name)
-  //       })
-  //       .catch(error => console.error(error))
-  //     }
-  //   },
+  },
 };
 </script>
 
