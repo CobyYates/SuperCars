@@ -9,8 +9,10 @@
       <v-row>
           <v-col sm="3" v-for="person in 4">
               <v-card>
+                  <!-- <v-img src="people.photo"></v-img> -->
                   <h3>{{ people.name }} {{ people.surname }}</h3>
-                  <p>Region: {{ people.region }}</p>
+                  <p>From: {{ people.region }}</p>
+                  <v-btn class="d-flex justify-center">HIRE</v-btn>
               </v-card>
         </v-col>
       </v-row>
@@ -31,7 +33,6 @@ export default {
         axios.get('https://uinames.com/api/?region=United States')
         .then(response => {
             this.people = response.data
-            console.log(people)
         })
         .catch(error => console.error(error))
         }
