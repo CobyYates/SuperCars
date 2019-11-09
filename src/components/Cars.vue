@@ -1,9 +1,20 @@
 <template>
   <v-content align="center">
-    <v-container>  <!-- :cars="cars" -->
+    <v-container>
+      <!-- :cars="cars" -->
       <v-row>
         <v-col class="mt-12">
           <h2>Add cars to your garage</h2>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <v-col class="d-flex justify-center">
+            <h3>Next Step</h3>
+            <router-link tag="v-btn" to>
+              <v-btn color="teal accent-4" class="mb-12">HIRE DRIVER</v-btn>
+            </router-link>
+          </v-col>
         </v-col>
       </v-row>
       <v-row>
@@ -34,6 +45,6 @@ export default {
 
 <style scoped>
 h2 {
-    color: #555;
+  color: #555;
 }
 </style>

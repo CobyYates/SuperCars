@@ -13,25 +13,25 @@
 
       <v-toolbar-items>
         <v-divider class="teal darken-3" vertical></v-divider>
-        <router-link to="/" active-class="active" exact>
+        <router-link tag="v-btn" to="/" active-class="active" exact>
           <a>
             <v-btn text color="teal accent-3">HOME</v-btn>
           </a>
         </router-link>
         <v-divider class="teal darken-3" vertical></v-divider>
-        <router-link to="/build" active-class="active" exact>
+        <router-link tag="v-btn" to="/build" active-class="active" exact>
           <a>
             <v-btn text color="teal accent-3">BUILD GARAGE</v-btn>
           </a>
         </router-link>
         <v-divider class="teal darken-3" vertical></v-divider>
-        <router-link to="/grid" active-class="active" exact>
+        <router-link tag="v-btn" to="/grid" active-class="active" exact>
           <a>
             <v-btn text color="teal accent-3">CARS</v-btn>
           </a>
         </router-link>
         <v-divider class="teal darken-3" vertical></v-divider>
-        <router-link to="/contact" active-class="active" exact>
+        <router-link tag="v-btn" to="/contact" active-class="active" exact>
           <a>
             <v-btn text color="teal accent-3">CONTACT</v-btn>
           </a>

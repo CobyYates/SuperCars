@@ -7,9 +7,9 @@
         </v-col>
       </v-row>
       <v-row>
-          <v-col sm="3" v-for="person in 4">
+          <v-col sm="3" v-for="person in 1">
               <v-card>
-                  <!-- <v-img src="people.photo"></v-img> -->
+                  <v-img :src="picture" height="200"></v-img>
                   <h3>{{ people.name }} {{ people.surname }}</h3>
                   <p>From: {{ people.region }}</p>
                   <v-btn class="d-flex justify-center">HIRE</v-btn>
@@ -25,12 +25,13 @@ import axios from 'axios'
 export default {
     data() {
         return {
-            people: [''],
+            people: [],
+            picture: 'https://uinames.com/api/photos/male/8.jpg'
         }
     },
     methods: {
         getPeople() {
-        axios.get('https://uinames.com/api/?region=United States')
+        axios.get('https://uinames.com/api/?region=united states')
         .then(response => {
             this.people = response.data
         })
