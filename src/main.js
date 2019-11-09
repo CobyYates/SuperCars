@@ -25,6 +25,4 @@ Setup navigation with names and path (Nov 4 time: 3:37 in Zoom)
   name: 'remote'
   components: remote
 }
-Add different pages
-add router in app.vue
 */

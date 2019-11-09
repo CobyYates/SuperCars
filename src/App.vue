@@ -29,6 +29,8 @@ export default {
     'app-form': Form,
   },
   data: () => ({
+    items: null,
+    garageArr: []
   }),
 };
 </script>

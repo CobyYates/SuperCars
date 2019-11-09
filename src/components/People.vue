@@ -7,6 +7,15 @@
         </v-col>
       </v-row>
       <v-row>
+        <v-col>
+          <v-col class="d-flex justify-center">
+            <router-link to="/build/complete">
+              <v-btn color="teal accent-4" class="mb-12">SAVE MY GARAGE</v-btn>
+            </router-link>
+          </v-col>
+        </v-col>
+      </v-row>
+      <v-row>
           <v-col sm="3" v-for="person in 1">
               <v-card>
                   <v-img :src="picture" height="200"></v-img>

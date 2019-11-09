@@ -18,7 +18,7 @@
     </v-row>
     <v-container :cars="cars">
       <v-row>
-        <v-col sm="3" v-for="car in cars" :key="car.price">
+        <v-col sm="3" v-for="car in cars">
           <app-card :car="car"></app-card>
         </v-col>
       </v-row>

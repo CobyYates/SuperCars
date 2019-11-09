@@ -11,7 +11,7 @@
         <v-col>
           <v-col class="d-flex justify-center">
             <h3>Next Step</h3>
-            <router-link tag="v-btn" to>
+            <router-link to="/people">
               <v-btn color="teal accent-4" class="mb-12">HIRE DRIVER</v-btn>
             </router-link>
           </v-col>
