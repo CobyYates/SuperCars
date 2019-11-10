@@ -2,20 +2,17 @@
   <div>
     <v-row class="back">
       <v-col sm="10">
-        <!-- <app-garage></app-garage> -->
         <router-view>
-        <!-- <app-cars></app-cars>
-        <app-people></app-people> -->
         </router-view>        
       </v-col>
-      <hr>
+      <hr class="divider">
       <v-col>
         <v-row>
           <v-col class="d-flex flex-column">
             <v-row>
               <v-col class="d-flex justify-center">
                 <p>Your build will be saved here</p>
-                <p :garage="garage"> {{ garage }}</p>
+                <!-- <h2>{{ activePlan }}</h2> -->
                 <!-- <p :build="car">{{ car }}</p> -->
                 <!-- <p :build="car">{{ driver }}</p> -->
               </v-col>
@@ -32,6 +29,7 @@ import axios from 'axios'
 import Garage from "./Garage";
 import Cars from "./Cars";
 import People from "./People";
+import GarageComponent from './GarageComponent'
 // import func from '../../vue-temp/vue-editor-bridge';
 
 export default {
@@ -52,4 +50,7 @@ export default {
 </script>
 
 <style scoped>
+  .divider {
+    height: 90vh;
+  }
 </style>

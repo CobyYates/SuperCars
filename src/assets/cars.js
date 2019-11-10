@@ -7,10 +7,6 @@ export const cars = [
         "power": "1,160",
         "weight": "3,075",
         "image": "https://i.imgur.com/Xbf6slT.jpg",
-        images: [
-            {"image": "https://images-na.ssl-images-amazon.com/images/I/61UqxOKsXNL._SX355_.jpg"},
-            {"image": "https://www.koenigseggnb.com/static/dealer-16005/images/Agera_RS_sideview.jpg"},
-            {"image": "https://st.motortrend.com/uploads/sites/5/2017/03/Koenigsegg-Agera-RS-Gryphon-rear-end.jpg"}],
         "engine": "V8",
         "torque": "944",
         "sixty": "2.9",
