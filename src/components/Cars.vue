@@ -1,22 +1,11 @@
 <template>
-  <v-content align="center">
-    <v-container>
-      <!-- :cars="cars" -->
-      <v-row>
-        <v-col class="mt-12">
-          <h2>Add cars to your garage</h2>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col>
-          <v-col class="d-flex justify-center">
-            <h3>Next Step</h3>
-            <router-link to="/people">
-              <v-btn color="teal accent-4" class="mb-12">HIRE DRIVER</v-btn>
-            </router-link>
-          </v-col>
-        </v-col>
-      </v-row>
+  <v-content>
+    <v-row>
+      <v-col class="d-flex justify-center my-6">
+        <h2>Select Your Garage Size {{ activePlan }}</h2>
+        <!-- nested routes for page to page (video 244) -->
+      </v-col>
+    </v-row>
       <v-row>
         <v-col sm="3" v-for="car in cars">
           <app-card :car="car"></app-card>
@@ -25,7 +14,12 @@
           </div>
         </v-col>
       </v-row>
-    </v-container>
+      <v-row>
+      <v-col class="d-flex justify-center mb-12 pb-12">
+        <!-- <router-link to="/cars" @click="addGarage()"><v-btn color="teal">CHOOSE CARS</v-btn></router-link> -->
+        <v-btn to="/build/people" color="teal">NEXT STEP > HIRE DRIVER</v-btn>
+      </v-col>
+    </v-row>
   </v-content>
 </template>
 

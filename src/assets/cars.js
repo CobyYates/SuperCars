@@ -259,17 +259,4 @@ export const cars = [
         "sixty": "4.5",
         "price": "169,000"
     },
-    {
-        "make": "",
-        "model": "",
-        "year": "",
-        "top_speed": "",
-        "power": "",
-        "weight": "",
-        "image": "",
-        "engine": "",
-        "torque": "",
-        "sixty": "",
-        "price": ""
-    },
 ]

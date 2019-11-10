@@ -1,8 +1,8 @@
 <template>
     <v-col>
         <v-card class="mx-auto" :class="{'cyan darken-2' : this.activePlan === this.planName}" @keydown.space="updateActivePlan" max-width="344" @click="updateActivePlan">
-          <v-img src="../assets/Garage.png" height="200px" width="70%"></v-img>
-          <v-card-title>{{ this.planName }} Vehicle</v-card-title>
+          <v-img src="../assets/Garage.png"  width="60%" class="mx-auto mt-3"></v-img>
+          <v-card-title class="mx-auto d-flex justify-center">{{ this.planName }} Vehicle</v-card-title>
         </v-card>
       </v-col>
 </template>
