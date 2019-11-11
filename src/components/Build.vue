@@ -35,18 +35,18 @@ export default {
   data: () => ({
     garage: '',
     picked: "1",
-    activePlan: "1"
+    // activePlan: "1"
   }),
   components: {
     "app-garage": Garage,
     "app-cars": Cars,
     "app-people": People,
   },
-  methods: {
-    update: function(updatedGarage){
-    this.garage = updatedGarage
-    }
-  }
+  // methods: {
+  //   update: function(updatedGarage){
+  //   this.garage = updatedGarage
+  //   }
+  // }
 };
 </script>
 
