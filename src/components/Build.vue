@@ -33,9 +33,9 @@ import People from "./People";
 
 export default {
   data: () => ({
-    garage: '',
-    picked: "1",
-    // activePlan: "1"
+    // garage: '',
+    // picked: "1",
+    activePlan: "1"
   }),
   components: {
     "app-garage": Garage,

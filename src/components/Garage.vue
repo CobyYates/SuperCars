@@ -29,8 +29,10 @@
 import GarageComponent from "./GarageComponent";
 
 export default {
-  props: ["planName", "active-plan"],
-  data: () => ({}),
+  // props: ["planName", "active-plan"],
+  data: () => ({
+    activePlan: '1'
+  }),
   methods: {},
   computed: {},
   components: {
