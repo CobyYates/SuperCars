@@ -12,7 +12,7 @@
             <v-row>
               <v-col class="d-flex justify-center">
                 <p>Your build will be saved here</p>
-                <h2 >{{ activePlan }}</h2>
+                <h2>{{ activePlan }}</h2>
                 <!-- <p :build="car">{{ car }}</p> -->
                 <!-- <p :build="car">{{ driver }}</p> -->
               </v-col>
@@ -44,13 +44,7 @@ export default {
   },
   methods: {
     update: function(updatedGarage){
-    this.$store.getters.updatedGarage = updatedGarage
-    // this.garage = updatedGarage
-    }
-  },
-  computed: {
-    activePlan() {
-      return this.store.state.activePlan
+    this.garage = updatedGarage
     }
   }
 };

@@ -7,14 +7,14 @@
       </v-col>
     </v-row>
     <v-row>
-      <app-garage planName="1" v-model="activePlan"></app-garage>
-      <app-garage planName="2" v-model="activePlan"></app-garage>
+      <app-garage :value='planName' @input='updateActivePlan'></app-garage>
+      <!-- <app-garage planName="2" v-model="activePlan"></app-garage>
       <app-garage planName="3" v-model="activePlan"></app-garage>
       <app-garage planName="4" v-model="activePlan"></app-garage>
       <app-garage planName="5" v-model="activePlan"></app-garage>
       <app-garage planName="6" v-model="activePlan"></app-garage>
       <app-garage planName="7" v-model="activePlan"></app-garage>
-      <app-garage planName="8" v-model="activePlan"></app-garage>
+      <app-garage planName="8" v-model="activePlan"></app-garage> -->
     </v-row>
     <v-row>
       <v-col class="d-flex justify-center">
@@ -29,7 +29,7 @@
 import GarageComponent from "./GarageComponent";
 
 export default {
-  props: ["planName", "active-plan"],
+  // props: ["planName", "active-plan"],
   data: () => ({}),
   methods: {},
   computed: {},
