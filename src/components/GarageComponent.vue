@@ -12,7 +12,8 @@ export default {
     props: ['planName', 'active-plan'],
     methods: {
         updateActivePlan() {
-            this.$emit('onUpdatePlan', this.planName)
+            // this.$emit('onUpdatePlan', this.planName)
+            this.$store.state('onUpdatePlan', planName)
         }
     },
     model: {
