@@ -1,18 +1,18 @@
 <template>
   <div>
-    <v-row class="back">
-      <v-col sm="10">
+    <v-row class="back test mb-12 pb-12">
+      <v-col sm="10" class="pl-6">
         <router-view v-model="activePlan">
         </router-view>        
       </v-col>
       <hr class="divider">
-      <v-col>
+      <v-col class="sidebar teal lighten-2">
         <v-row>
           <v-col class="d-flex flex-column">
             <v-row>
               <v-col class="d-flex justify-center">
                 <p>Your build will be saved here</p>
-                <h2>{{ activePlan }}</h2>
+                <h2>{{ this.activePlan }}</h2>
                 <!-- <p :build="car">{{ car }}</p> -->
                 <!-- <p :build="car">{{ driver }}</p> -->
               </v-col>
@@ -33,8 +33,6 @@ import People from "./People";
 
 export default {
   data: () => ({
-    // garage: '',
-    // picked: "1",
     activePlan: "1"
   }),
   components: {
@@ -42,16 +40,16 @@ export default {
     "app-cars": Cars,
     "app-people": People,
   },
-  // methods: {
-  //   update: function(updatedGarage){
-  //   this.garage = updatedGarage
-  //   }
-  // }
+//   methods: {
+//     update: function(updatedGarage){
+//     this.garage = updatedGarage
+//     }
+//   }
 };
 </script>
 
 <style scoped>
   .divider {
-    height: 90vh;
+    height: 100vh;
   }
 </style>

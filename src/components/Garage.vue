@@ -7,7 +7,6 @@
       </v-col>
     </v-row>
     <v-row>
-      <app-garage planName="1" v-model="activePlan"></app-garage>
       <app-garage planName="2" v-model="activePlan"></app-garage>
       <app-garage planName="3" v-model="activePlan"></app-garage>
       <app-garage planName="4" v-model="activePlan"></app-garage>
@@ -15,11 +14,12 @@
       <app-garage planName="6" v-model="activePlan"></app-garage>
       <app-garage planName="7" v-model="activePlan"></app-garage>
       <app-garage planName="8" v-model="activePlan"></app-garage>
+      <app-garage planName="9" v-model="activePlan"></app-garage>
     </v-row>
     <v-row>
       <v-col class="d-flex justify-center">
         <!-- Add function to state for size -->
-        <v-btn to="/build/cars" color="teal">NEXT STEP > CARS</v-btn>
+        <v-btn to="/build/cars" color="teal" @click="selectGarage()">NEXT STEP > CARS</v-btn>
       </v-col>
     </v-row>
   </v-content>
@@ -29,11 +29,14 @@
 import GarageComponent from "./GarageComponent";
 
 export default {
-  // props: ["planName", "active-plan"],
   data: () => ({
-    activePlan: '1'
+    activePlan: '2'
   }),
-  methods: {},
+  methods: {
+    selectGarage () {
+      this.$store.state.selectedSize.push(this.activePlan)
+    }
+  },
   computed: {},
   components: {
     "app-garage": GarageComponent

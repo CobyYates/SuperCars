@@ -7,22 +7,22 @@
         </v-col>
       </v-row>
       <v-row>
+          <v-col sm="3" v-for="person in 1">
+              <v-card>
+                  <v-img height="200" :src=people.photo></v-img>
+                  <h3>{{ people.name }} {{ people.surname }}</h3>
+                  <p>From: {{ people.region }}</p>
+                  <v-btn class="d-flex justify-center">HIRE</v-btn>
+              </v-card>
+        </v-col>
+      </v-row>
+      <v-row>
         <v-col>
           <v-col class="d-flex justify-center">
             <router-link to="/build/complete">
               <v-btn color="teal accent-4" class="mb-12">SAVE MY GARAGE</v-btn>
             </router-link>
           </v-col>
-        </v-col>
-      </v-row>
-      <v-row>
-          <v-col sm="3" v-for="person in 1">
-              <v-card>
-                  <v-img :src="picture" height="200"></v-img>
-                  <h3>{{ people.name }} {{ people.surname }}</h3>
-                  <p>From: {{ people.region }}</p>
-                  <v-btn class="d-flex justify-center">HIRE</v-btn>
-              </v-card>
         </v-col>
       </v-row>
     </v-container>
@@ -35,14 +35,16 @@ export default {
     data() {
         return {
             people: [],
-            picture: 'https://uinames.com/api/photos/male/8.jpg'
         }
     },
     methods: {
         getPeople() {
-        axios.get('https://uinames.com/api/?region=united states')
+        // axios.get('https://uinames.com/api/?region=united states')
+        // axios.get('https://uinames.com/api/?region=united states')
+        axios.get('https://uinames.com/api/?ext')
         .then(response => {
             this.people = response.data
+            console.log(response.data)
         })
         .catch(error => console.error(error))
         }

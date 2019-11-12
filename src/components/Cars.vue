@@ -10,7 +10,7 @@
         <v-col sm="3" v-for="car in cars">
           <app-card :car="car"></app-card>
           <div class="flex-grow-1">
-            <v-btn class="mt-4" small color="teal accent-4">Add to Garage</v-btn>
+            <v-btn class="mt-4" small color="teal accent-4" @click="selectedVehicle">Add to Garage</v-btn>
           </div>
         </v-col>
       </v-row>
@@ -33,6 +33,9 @@ export default {
   }),
   components: {
     appCard
+  },
+  selectVehicle() {
+    this.$store.state.SelectedSize.push(this.car)
   }
 };
 </script>
