@@ -1,20 +1,20 @@
 <template>   
     <v-container>
       <v-row>
-        <v-col class="mt-12">
+        <v-col class="mt-12 d-flex justify-center flex-column">
           <h2>Hire someone to take care of your vehicles</h2>
-            <v-btn @click="getPeople()" color="green darken-1">Yes</v-btn>
+          <v-btn @click="getPeople()" color="teal accent-4" width="20%">Yes</v-btn>
         </v-col>
       </v-row>
       <v-row>
-          <v-col sm="3" v-for="person in 1">
+          <v-col sm="3" v-for="person in people">
               <!-- <v-card :person="person"> -->
                 <v-card>
-                  <v-img height="200" :src=people.photo></v-img>
-                  <h3>{{ people.name }} {{ people.surname }}</h3>
-                  <p>From: {{ people.region }}</p>
-                  <p>Age: {{ people.age }}</p>
-                  <v-btn class="d-flex justify-center" @click="hire(people)">HIRE</v-btn>
+                  <v-img height="200" :src=person.photo></v-img>
+                  <h3>{{ person.name }} {{ person.surname }}</h3>
+                  <p>From: {{ person.region }}</p>
+                  <p>Age: {{ person.age }}</p>
+                  <v-btn class="d-flex justify-center" @click="hire(person)">HIRE</v-btn>
               </v-card>
         </v-col>
       </v-row>
@@ -44,7 +44,7 @@ export default {
           this.getPeople()
         },
         getPeople() {
-        axios.get('https://uinames.com/api/?ext&region=united states')
+        axios.get('https://uinames.com/api/?ext&region=united states&amount=4')
         .then(response => {
             this.people = response.data
             // console.log(response.data)
