@@ -19,7 +19,7 @@
     <v-row>
       <v-col class="d-flex justify-center">
         <!-- Add function to state for size -->
-        <v-btn to="/build/cars" color="teal" @click="selectGarage()">NEXT STEP > CARS</v-btn>
+        <v-btn to="/build/cars" color="teal">NEXT STEP > CARS</v-btn>
       </v-col>
     </v-row>
   </v-content>
@@ -30,12 +30,10 @@ import GarageComponent from "./GarageComponent";
 
 export default {
   data: () => ({
-    activePlan: ''
+    activePlan: '2'
   }),
   methods: {
-    selectGarage () {
-      this.$store.state.selectedSize.push(this.activePlan)
-    }
+   
   },
   computed: {},
   components: {

@@ -40,6 +40,7 @@
         </v-card-text>
       </div>
     </v-expand-transition>
+    <v-btn class="mt-4" small color="teal accent-4" @click="selectVehicle">Add to Garage</v-btn>
   </v-card>
 </v-hover>
 </template>
@@ -57,6 +58,18 @@ export default {
   }),
   components: {
     'app-card-expand': CardExpand
+  },
+  methods: {
+    selectVehicle() {
+      if(this.$store.state.selectedSize.length < this.$store.state.selectedCars.length) {
+          alert('too many vehicles')
+        console.log(this.$store.state.selectedCars);
+      }
+      else {
+        this.$store.state.selectedCars.push(this.car);
+      }
+    console.log(this.$store.state.selectedCars);
+  }
   }
 };
 </script>

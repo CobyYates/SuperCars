@@ -1,5 +1,5 @@
 <template>   
-    <v-container>  <!-- :cars="cars" -->
+    <v-container>
       <v-row>
         <v-col class="mt-12">
           <h2>Hire someone to take care of your vehicles</h2>
