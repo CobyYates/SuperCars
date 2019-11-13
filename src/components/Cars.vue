@@ -32,10 +32,6 @@ export default {
   components: {
     appCard
   },
-  // selectVehicle() {
-  //   this.$store.state.selectedCars.push("test");
-  //   console.log(this.$store.state.selectedCars);
-  // }
 };
 </script>
 

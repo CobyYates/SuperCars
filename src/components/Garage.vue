@@ -2,7 +2,7 @@
   <v-content>
     <v-row>
       <v-col class="d-flex justify-center my-6">
-        <h2>Select Your Garage Size {{ activePlan }}</h2>
+        <h2>Select Your Garage Size</h2>
         <!-- nested routes for page to page (video 244) -->
       </v-col>
     </v-row>

@@ -66,6 +66,7 @@ export default {
         console.log(this.$store.state.selectedCars);
       }
       else {
+        this.$store.state.selectedCars.pop()
         this.$store.state.selectedCars.push(this.car);
       }
     console.log(this.$store.state.selectedCars);

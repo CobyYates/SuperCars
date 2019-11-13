@@ -13,8 +13,8 @@
                 <p>Your build will be saved here</p>
                 <v-img src="../assets/Garage.png" width="150" class="mx-auto mt-3"></v-img>
                 <h2>Garage Size: {{ this.$store.state.selectedSize[0] }}</h2>
-                <h2 class="car">Cars: {{ this.$store.state.selectedCars[0] }}</h2>
-                <h2>Helper: {{ this.$store.state.selectedHelper[0] }}</h2>
+                <h2 class="car">Cars: {{ this.$store.state.selectedCars[0].make }} {{ this.$store.state.selectedCars[0].model }}</h2>
+                <h2>Helper: {{ this.$store.state.selectedHelper[0].name }} {{ this.$store.state.selectedHelper[0].surname }}</h2>
               </v-col>
             </v-row>
           </v-col>
@@ -34,7 +34,7 @@ import People from "./People";
 export default {
   data: () => ({
     activePlan: "1",
-    snackbar: false,
+    snackbar: false
   }),
   components: {
     "app-garage": Garage,
@@ -44,7 +44,7 @@ export default {
   methods: {
     update: function(updatedGarage) {
       this.garage = updatedGarage;
-    },
+    }
   }
 };
 </script>
@@ -53,9 +53,4 @@ export default {
 .divider {
   height: 100vh;
 }
-
-/* .car {
-    display: flex;
-    flex-wrap: wrap;
-  } */
 </style>

@@ -7,14 +7,14 @@
         </v-col>
       </v-row>
       <v-row>
-          <v-col sm="3" v-for="person in 4">
+          <v-col sm="3" v-for="person in 1">
               <!-- <v-card :person="person"> -->
                 <v-card>
                   <v-img height="200" :src=people.photo></v-img>
                   <h3>{{ people.name }} {{ people.surname }}</h3>
                   <p>From: {{ people.region }}</p>
                   <p>Age: {{ people.age }}</p>
-                  <v-btn class="d-flex justify-center">HIRE</v-btn>
+                  <v-btn class="d-flex justify-center" @click="hire(people)">HIRE</v-btn>
               </v-card>
         </v-col>
       </v-row>
@@ -40,16 +40,28 @@ export default {
         }
     },
     methods: {
+        mounted(){
+          this.getPeople()
+        },
         getPeople() {
-        // axios.get('https://uinames.com/api/?region=united states')
-        // axios.get('https://uinames.com/api/?region=united states')
-        axios.get('https://uinames.com/api/?ext&region=united states&amount=4')
+        axios.get('https://uinames.com/api/?ext&region=united states')
         .then(response => {
             this.people = response.data
-            console.log(response.data)
+            // console.log(response.data)
         })
         .catch(error => console.error(error))
-        }
+        },
+        hire(person) {
+          if(this.$store.state.selectedHelper <= 0) {
+            this.$store.state.selectedHelper.pop()
+            this.$store.state.selectedHelper.push(person)
+            console.log(this.$store.state.selectedHelper)
+          }
+          else {
+            this.$store.state.selectedHelper.pop()
+            this.$store.state.selectedHelper.push(person)
+          }
+        },
     }
 }
 </script>
