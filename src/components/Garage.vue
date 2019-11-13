@@ -30,7 +30,7 @@ import GarageComponent from "./GarageComponent";
 
 export default {
   data: () => ({
-    activePlan: '2'
+    activePlan: ''
   }),
   methods: {
     selectGarage () {

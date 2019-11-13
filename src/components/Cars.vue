@@ -35,7 +35,7 @@ export default {
     appCard
   },
   selectVehicle() {
-    this.$store.state.SelectedSize.push(this.car)
+    this.$store.state.selectedSize.push(this.cars)
   }
 };
 </script>
