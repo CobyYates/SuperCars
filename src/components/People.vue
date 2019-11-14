@@ -8,7 +8,6 @@
       </v-row>
       <v-row>
           <v-col sm="3" v-for="person in people">
-              <!-- <v-card :person="person"> -->
                 <v-card>
                   <v-img height="200" :src=person.photo></v-img>
                   <h3>{{ person.name }} {{ person.surname }}</h3>

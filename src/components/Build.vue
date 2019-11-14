@@ -4,7 +4,6 @@
       <v-col sm="10" class="pl-6">
         <router-view v-model="activePlan"></router-view>
       </v-col>
-      <hr class="divider" />
       <v-col class="sidebar teal lighten-2">
         <v-row>
           <v-col class="d-flex flex-column">
@@ -34,7 +33,7 @@ import People from "./People";
 export default {
   data: () => ({
     activePlan: "1",
-    snackbar: false
+
   }),
   components: {
     "app-garage": Garage,
@@ -50,7 +49,4 @@ export default {
 </script>
 
 <style scoped>
-.divider {
-  height: 100vh;
-}
 </style>
