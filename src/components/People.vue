@@ -1,19 +1,27 @@
 <template>   
     <v-container>
       <v-row>
-        <v-col class="mt-12 d-flex justify-center flex-column">
-          <h2>Hire someone to take care of your vehicles</h2>
-          <v-btn @click="getPeople()" color="teal accent-4" width="20%">Yes</v-btn>
+        <v-col class="mt-12 d-flex justify-center">
+          <h2>Hire someone to take care of your vehicles?</h2>
         </v-col>
       </v-row>
       <v-row>
-          <v-col sm="3" v-for="person in people">
-                <v-card>
+        <v-col class="mt-4 d-flex justify-center">
+          <v-btn id="hireBtn" @click="getPeople()" color="teal accent-4" width="20%">Yes</v-btn>
+        </v-col>
+      </v-row>
+      <v-row class="people">
+          <v-col sm="3" class="d-flex justify-center" v-for="person in people">
+                <v-card dark class="flex-column d-flex justify-center">
                   <v-img height="200" :src=person.photo></v-img>
-                  <h3>{{ person.name }} {{ person.surname }}</h3>
-                  <p>From: {{ person.region }}</p>
-                  <p>Age: {{ person.age }}</p>
-                  <v-btn class="d-flex justify-center" @click="hire(person)">HIRE</v-btn>
+                  <v-row>
+                    <v-col class="d-flex flex-column">
+                      <h3 class="d-flex justify-center">{{ person.name }} {{ person.surname }}</h3>
+                      <p class="pl-5 pt-3">From: {{ person.region }}</p>
+                      <p class="pl-5">Age: {{ person.age }}</p>
+                    </v-col>
+                  </v-row>
+                  <v-btn class="d-flex justify-center" color="teal" @click="hire(person)">HIRE</v-btn>
               </v-card>
         </v-col>
       </v-row>
@@ -21,7 +29,7 @@
         <v-col>
           <v-col class="d-flex justify-center">
             <router-link to="/build/complete">
-              <v-btn color="teal accent-4" class="mb-12">SAVE MY GARAGE</v-btn>
+              <v-btn color="teal accent-4" class="my-12">SAVE MY GARAGE</v-btn>
             </router-link>
           </v-col>
         </v-col>
@@ -43,10 +51,11 @@ export default {
           this.getPeople()
         },
         getPeople() {
+          let btn = document.querySelector("#hireBtn")
         axios.get('https://uinames.com/api/?ext&region=united states&amount=4')
         .then(response => {
             this.people = response.data
-            // console.log(response.data)
+            btn.setAttribute("style", "display: none;")
         })
         .catch(error => console.error(error))
         },
@@ -66,5 +75,7 @@ export default {
 </script>
 
 <style scoped>
-
+.people {
+  height: 40vh;
+}
 </style>

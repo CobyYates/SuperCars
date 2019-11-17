@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row class="back test mb-12 pb-12">
+    <v-row class="back test builder">
       <v-col sm="10" class="pl-6">
         <router-view v-model="activePlan"></router-view>
       </v-col>
@@ -49,4 +49,8 @@ export default {
 </script>
 
 <style scoped>
+.builder {
+  height: calc(100vh - 96px);
+  /* margin-bottom: 0; */
+}
 </style>

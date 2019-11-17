@@ -7,8 +7,8 @@
           <router-view></router-view>
         </v-col>
       </v-row>
-          <app-footer/>
     </v-content>
+    <app-footer/>
   </v-app>
 </template>
 

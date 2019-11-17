@@ -1,5 +1,5 @@
 <template>
-  <v-footer dark padless absolute>
+  <v-footer dark padless fixed class="footer">
     <v-card class="flex" flat tile>
       <v-card-title class="teal">
 
@@ -24,5 +24,7 @@
 </script>
 
 <style scoped>
-
+.footer {
+  bottom: 0;
+}
 </style>
