@@ -5,7 +5,7 @@
 
     <v-card-title>
       <div class="text-no-wrap carTitle">{{ car.year }} {{ car.make }} {{ car.model }}</div>
-      <v-list-item-subtitle>${{ car.price }}</v-list-item-subtitle>
+      <v-list-item-subtitle>{{ car.price | currency}}</v-list-item-subtitle>
     </v-card-title>
 
     <v-card-actions>
