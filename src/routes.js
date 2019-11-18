@@ -3,7 +3,6 @@ import Build from './components/Build.vue'
 import Garage from './components/Garage.vue'
 import Cars from './components/Cars.vue'
 import People from './components/People.vue'
-import Grid from './components/Grid.vue'
 import Contact from './components/Form.vue'
 
 export const routes = [
@@ -13,6 +12,5 @@ export const routes = [
         { path: '/build/cars', component: Cars },
         { path: '/build/people', component: People }
     ] },
-    { path: '/grid', component: Grid },
     { path: '/contact', component: Contact },
 ]

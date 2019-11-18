@@ -20,11 +20,8 @@ export default {
   }),
   methods: {
     updateActivePlan() {
-        if (this.$store.state.selectedSize.length >= 1){
-            this.$store.state.selectedSize.pop()
-        }
-        this.$store.state.selectedSize.push(this.planName)
-        this.$emit("onUpdatePlan", this.planName);
+      this.$store.state.selectedSize = this.planName
+      this.$emit("onUpdatePlan", this.planName);
       
     },
   },

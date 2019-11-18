@@ -22,10 +22,6 @@
 
         <v-divider class="teal darken-3" vertical></v-divider>
 
-        <v-btn to="/grid" exact text color="teal accent-3">CARS</v-btn>
-
-        <v-divider class="teal darken-3" vertical></v-divider>
-
         <v-btn to="/contact" exact text color="teal accent-3">CONTACT</v-btn>
       </v-toolbar-items>
     </v-toolbar>
