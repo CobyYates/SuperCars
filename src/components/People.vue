@@ -28,7 +28,7 @@
       <v-row>
         <v-col>
           <v-col class="d-flex justify-center">
-            <router-link to="/build/complete">
+            <router-link to="complete">
               <v-btn color="teal accent-4" class="my-12">SAVE MY GARAGE</v-btn>
             </router-link>
           </v-col>

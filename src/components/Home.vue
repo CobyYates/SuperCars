@@ -41,7 +41,7 @@
             src="http://ddaudio.com/wp-content/uploads/2016/01/carbonfiber-header-black-1.jpg">
             <v-row align="center">
                 <v-col align="center">
-                    <v-btn x-large color="teal">START BUILDING</v-btn>
+                    <v-btn to="/build" exact large color="teal accent-3">START BUILDING</v-btn>
                 </v-col>
             </v-row>
             </v-parallax>
@@ -54,8 +54,6 @@
 <script>
 
 export default {
-  components: {
-  },
 };
 </script>
 

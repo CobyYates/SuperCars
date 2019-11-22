@@ -2,36 +2,46 @@
   <div>
     <v-row class="back test builder">
       <v-col sm="10" class="pl-6">
-        <v-btn @click="show=!show">test</v-btn>
+        <v-btn
+          class="sliderDiv"
+          color="teal teal lighten-2"
+          small
+          @click="show = !show"
+          ><</v-btn
+        >
         <router-view v-model="activePlan"></router-view>
-      </v-col>
-      <v-col class="sidebar teal lighten-2">
         <v-row>
-          <v-col class="d-flex flex-column">
-            <v-row>
-              <transition name="slide" mode="in">
-              <v-col v-if="show" class="d-flex flex-column align-center">                
+            <v-col class="bottom"> 
+            </v-col>
+          </v-row>
+      </v-col>
+      <!-- <transition name="slide" mode="in"> -->
+        <v-col v-if="show" class="sidebar teal lighten-2">
+          <v-row>
+            <v-col class="d-flex flex-column">
+              <v-row>
+                <v-col class="d-flex flex-column align-center">
                   <p>Your build will be saved here</p>
                   <v-img
                     src="../assets/Garage.png"
                     width="150"
                     class="mx-auto mt-3"
                   ></v-img>
-                  <h2>Garage Size: {{ this.$store.state.selectedSize[0] }}</h2>
+                  <h2>Garage Size: {{ this.$store.state.selectedSize }}</h2>
                   <h2 class="car">
-                    Cars: {{ this.$store.state.selectedCars[0].make }}
-                    {{ this.$store.state.selectedCars[0].model }}
+                    Cars: {{ this.$store.state.selectedCars[0] }}
+                    <!-- {{ this.$store.state.selectedCars[0] }} -->
                   </h2>
                   <h2>
                     Helper: {{ this.$store.state.selectedHelper[0].name }}
                     {{ this.$store.state.selectedHelper[0].surname }}
                   </h2>
-              </v-col>
-              </transition>
-            </v-row>
-          </v-col>
-        </v-row>
-      </v-col>
+                </v-col>
+              </v-row>
+            </v-col>
+          </v-row>
+        </v-col>
+      <!-- </transition> -->
     </v-row>
   </div>
 </template>
@@ -66,22 +76,29 @@ export default {
   height: calc(100vh - 96px);
 }
 
+.sliderDiv {
+  /* position: relative;
+  left: -200px; */
+}
+
 .slide-enter-active {
-  animation: slide-in 800ms ease-in forwards;
+  animation: slide-in 1000ms ease-in forwards;
 }
 
 .slide-leave-active {
-  animation: slide-out 800ms reverse;
+  animation: slide-in 1000ms reverse;
 }
 
 @keyframes slide-in {
-  from {
-    transform: translateX(100px);
-    opacity: 0;
+  0% {
+    transform: translateX(100%);
   }
-  to {
-    transform: translateX(0px);
-    opacity: 0;
+  50% {
+    transform: translateX(100%);
   }
+}
+
+.bottom {
+  height: 15vh;
 }
 </style>

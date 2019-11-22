@@ -17,7 +17,7 @@
     <v-expand-transition>
       <div v-show="show">
         <v-card-text>
-            <v-divider class="teal"></v-divider>          
+            <v-divider class="teal"></v-divider> 
           <v-row>
             <v-col>
               <h3>Power:</h3>
@@ -61,16 +61,29 @@ export default {
   },
   methods: {
     selectVehicle() {
-      if(this.$store.state.selectedSize.length < this.$store.state.selectedCars.length) {
+      if(this.$store.state.selectedCars[0] === 'test'){
+        this.$store.state.selectedCars.pop()
+        console.log(this.$store.state.selectedSize.length)
+        console.log(this.$store.state.selectedCars.length)
+      }
+      else if(this.$store.state.selectedSize.length <= this.$store.state.selectedCars.length){
+      this.$store.state.selectedCars.push(this.car);
+      console.log(this.$store.state.selectedCars)
+      console.log(this.$store.state.selectedCars)
+    }
+    }
+    
+   /* selectVehicle() {
+      if(this.$store.state.selectedSize.length <= this.$store.state.selectedCars.length) {
           alert('too many vehicles')
         console.log(this.$store.state.selectedCars);
       }
-      else {
-        this.$store.state.selectedCars.pop()
+      else{
+        // this.$store.state.selectedCars.pop()
         this.$store.state.selectedCars.push(this.car);
       }
     console.log(this.$store.state.selectedCars);
-  }
+  }*/
   }
 };
 </script>
