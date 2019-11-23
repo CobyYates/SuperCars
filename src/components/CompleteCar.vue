@@ -2,7 +2,7 @@
   <v-card class="mx-auto mb-5" max-width="344" outlined>
           <v-list-item three-line>
             <v-list-item-content>
-              <div class="overline mb-4">Car (add prop down for car number)</div>
+              <div class="overline mb-4">{{  }}</div>
               <v-list-item-title class="headline mb-1"
                 >make model</v-list-item-title>
               <v-list-item-subtitle

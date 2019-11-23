@@ -27,9 +27,9 @@
                     width="150"
                     class="mx-auto mt-3"
                   ></v-img>
-                  <h2>Garage Size: {{ this.$store.state.selectedSize }}</h2>
+                  <h2>Garage Size: {{ this.$store.state.selectedSize[0].size }}</h2>
                   <h2 class="car">
-                    Cars: {{ this.$store.state.selectedCars[0] }}
+                    <!-- Cars: {{ this.$store.state.selectedCars[0] }} -->
                     <!-- {{ this.$store.state.selectedCars[0] }} -->
                   </h2>
                   <h2>

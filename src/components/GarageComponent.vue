@@ -2,7 +2,7 @@
   <v-col>
     <v-card
       class="mx-auto"
-      :class="{'cyan darken-2' : this.activePlan === this.planName}"
+      :class="{'cyan darken-2' :this.activePlan === this.planName}"
       @keydown.space="updateActivePlan"
       max-width="344"
       @click="updateActivePlan"
@@ -20,9 +20,9 @@ export default {
   }),
   methods: {
     updateActivePlan() {
-      this.$store.state.selectedSize = this.planName
+      this.$store.state.selectedSize[0].size = this.planName
+      console.log(this.$store.state.selectedSize[0].size)
       this.$emit("onUpdatePlan", this.planName);
-      
     },
   },
   model: {

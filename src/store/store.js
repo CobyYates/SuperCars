@@ -6,7 +6,7 @@ Vue.use(Vuex)
 // export const store = new Vuex.Store({
 export default new Vuex.Store({
     state: {
-        selectedSize: '',
+        selectedSize: [{"size": ''}],
         selectedCars: ['test'],
         selectedHelper: ['']
     },

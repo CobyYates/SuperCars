@@ -12,9 +12,9 @@
             <v-list-item-content>
               <div class="overline mb-4">Garage</div>
               <v-list-item-title class="headline mb-1"
-                >Size: {{ this.$store.state.selectedSize[0] }}</v-list-item-title>
+                >Size: {{ this.$store.state.selectedSize[0].size }}</v-list-item-title>
               <v-list-item-subtitle
-                >You have a limited size of {{ this.$store.state.selectedSize[0] }} parking
+                >You have a limited size of {{ this.$store.state.selectedSize[0].size }} parking
                 spots in your garage to store cars.</v-list-item-subtitle
               >
             </v-list-item-content>
