@@ -15,5 +15,10 @@ export default new Vuex.Store({
     },
     actions: {
 
+    },
+    getters: {
+        carsList: state => {
+            return state.selectedCars;
+        }
     }
 })

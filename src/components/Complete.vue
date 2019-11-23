@@ -33,7 +33,8 @@
       </v-col>
     </v-row>
     <v-row>
-      <app-complete-car></app-complete-car>
+        <app-complete-car :cars="selectedCars"></app-complete-car>
+
     </v-row>
     <v-row>
       <v-col>
@@ -48,10 +49,16 @@ import CompleteCar from './CompleteCar'
 import Completeperson from './CompletePerson'
 
 export default {
+  props: ["car"],
     components: {
         'app-complete-person': Completeperson,
         'app-complete-car': CompleteCar
-    }
+    },
+    computed: {
+     selectedCars(){
+       return this.$store.state.selectedCars
+     }
+    },
 };
 </script>
 
