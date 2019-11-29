@@ -177,9 +177,9 @@ export const cars = [
         "weight": "2755",
         "image": "https://i.imgur.com/zl4NJDv.jpg",
         "engine": "V6",
-        "torque": "",
-        "sixty": "",
-        "price": ""
+        "torque": "390",
+        "sixty": "2.97",
+        "price": "272,400"
     },
     {
         "make": "Aston Martin",

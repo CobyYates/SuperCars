@@ -1,13 +1,13 @@
 <template>
   <v-container>
     <v-row>
-      <v-col>
+      <v-col class="d-flex justify-center">
         <h1>Here is your completed garage build</h1>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row class="d-flex justify-center">
       <v-col class="garage">
-        <v-card class="mx-auto mb-5" max-width="344" outlined>
+        <v-card class="mx-auto mb-5" max-width="500" dark outlined>
           <v-list-item three-line>
             <v-list-item-content>
               <div class="overline mb-4">Garage</div>
@@ -24,17 +24,12 @@
 
             </v-list-item-avatar>
           </v-list-item>
-
-          <v-card-actions class="d-flex justify-center">
-            <v-btn text>Change?</v-btn>
-          </v-card-actions>
         </v-card>
         <!-- <hr> -->
       </v-col>
     </v-row>
     <v-row>
         <app-complete-car :cars="selectedCars"></app-complete-car>
-
     </v-row>
     <v-row>
       <v-col>

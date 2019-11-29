@@ -40,11 +40,8 @@ export default {
 </style>
 
 /*
-TO DO: 
-- Route button in bottom of app.vue 
-- Change background colors for selected garage size 
+TO DO:  
 - Style buttons on car cards
-- Add ability to add multiple cars and have them display in side menu 
 - Scroll to top of page when changing from garage -> cars -> person
 - Change color of buttons for moving between building pages 
 - Add total cost of your cars in the garage

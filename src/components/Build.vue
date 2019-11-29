@@ -72,10 +72,6 @@ export default {
 </script>
 
 <style scoped>
-.builder {
-  height: calc(100vh - 96px);
-}
-
 .sliderDiv {
   /* position: relative;
   left: -200px; */
@@ -96,9 +92,5 @@ export default {
   50% {
     transform: translateX(100%);
   }
-}
-
-.bottom {
-  height: 15vh;
 }
 </style>

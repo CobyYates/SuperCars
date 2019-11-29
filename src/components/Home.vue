@@ -19,18 +19,13 @@
         </v-col>
         <v-col align="center">
             <h3>Step 2</h3>
-            <p>Select dream cars</p>
+            <p>Select super cars</p>
             <p><i class="fas fa-car"></i></p>
         </v-col>
         <v-col align="center">
             <h3>Step 3</h3>
-            <p>Hire driver or choose copilot</p>
+            <p>Hire helper</p>
             <p><i class="fas fa-users"></i></p>
-        </v-col>
-        <v-col align="center">
-            <h3>Step 4</h3>
-            <p>Save your garage</p>
-            <p><i class="fas fa-save"></i></p>
         </v-col>
     </v-row>
 
@@ -41,7 +36,7 @@
             src="http://ddaudio.com/wp-content/uploads/2016/01/carbonfiber-header-black-1.jpg">
             <v-row align="center">
                 <v-col align="center">
-                    <v-btn to="/build" exact large color="teal accent-3">START BUILDING</v-btn>
+                    <v-btn to="/build" exact large color="teal accent-4">START BUILDING</v-btn>
                 </v-col>
             </v-row>
             </v-parallax>

@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto mb-5" max-width="344" outlined>
+  <v-card class="mx-auto mb-12" max-width="500" dark outlined>
     <v-list-item three-line>
       <v-list-item-content>
         <div class="overline mb-4">Hired Helper</div>
@@ -7,8 +7,7 @@
           {{ this.$store.state.selectedHelper[0].name }}
           {{ this.$store.state.selectedHelper[0].surname }}</v-list-item-title>
         <v-list-item-subtitle>
-          <p>From: {{ this.$store.state.selectedHelper[0].region }}</p>
-          <p>Age: {{ this.$store.state.selectedHelper[0].age }}</p>
+          <p>From: {{ this.$store.state.selectedHelper[0].region }} Age: {{ this.$store.state.selectedHelper[0].age }}</p>
         </v-list-item-subtitle>
       </v-list-item-content>
 
@@ -16,10 +15,6 @@
         <v-img :src="this.$store.state.selectedHelper[0].photo"></v-img>
       </v-list-item-avatar>
     </v-list-item>
-
-    <v-card-actions class="d-flex justify-center">
-      <v-btn text>Fire</v-btn>
-    </v-card-actions>
   </v-card>
 </template>
 

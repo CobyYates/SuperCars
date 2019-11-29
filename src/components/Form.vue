@@ -24,7 +24,7 @@
     <v-checkbox
       v-model="checkbox"
       :error-messages="checkboxErrors"
-      label="Do you agree?"
+      label="New Tesla Truck is a Joke?"
       class="pb-12"
       required
       @change="$v.checkbox.$touch()"

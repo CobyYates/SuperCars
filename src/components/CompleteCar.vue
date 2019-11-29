@@ -1,8 +1,10 @@
 <template>
   <v-container>
-    <v-col v-for="car in cars">
+    <v-row>
+      <div class="px-4 d-flex justify-center" v-for="car in cars" :key="car.model">
       <app-car :car="car"></app-car>
-    </v-col>
+    </div>
+    </v-row>
   </v-container>
 </template>
 

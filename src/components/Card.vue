@@ -1,6 +1,6 @@
 <template>
   <v-hover v-slot:default="{ hover }">
-    <v-card dark class="mx-auto" max-width="344" :elevation="hover ? 12 : 2">
+    <v-card dark class="mx-auto" max-width="350" :elevation="hover ? 12 : 2">
       <v-img :src="car.image"></v-img>
 
       <v-card-title>
@@ -58,7 +58,7 @@ export default {
     show: false,
     dialog: false,
     emptyIcon: "mdi-garage-outline",
-    fullIcon: "mdi-garage"
+    fullIcon: "mdi-garage",
   }),
   components: {
     "app-card-expand": CardExpand
