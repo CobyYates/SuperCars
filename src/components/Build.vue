@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row class="back test builder">
-      <v-col sm="12" class="px-6">
+      <v-col sm="12" color="grey lighten-1" class="px-6">
         <transition name="fade">
           <router-view v-model="activePlan"></router-view>
         </transition>
@@ -31,9 +31,9 @@ export default {
     "app-people": People
   },
   methods: {
-    update: function(updatedGarage) {
-      this.garage = updatedGarage;
-    }
+    // update: function(updatedGarage) {
+    //   this.garage = updatedGarage;
+    // }
   }
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto mb-12" max-width="500" dark outlined>
+  <v-card class="mx-auto mb-12" max-width="400" dark outlined>
     <v-list-item three-line>
       <v-list-item-content>
         <div class="overline mb-4">Hired Helper</div>
@@ -7,7 +7,8 @@
           {{ this.$store.state.selectedHelper[0].name }}
           {{ this.$store.state.selectedHelper[0].surname }}</v-list-item-title>
         <v-list-item-subtitle>
-          <p>From: {{ this.$store.state.selectedHelper[0].region }} Age: {{ this.$store.state.selectedHelper[0].age }}</p>
+            <p>From: {{ this.$store.state.selectedHelper[0].region }} </p>
+            <p>Age: {{ this.$store.state.selectedHelper[0].age }}</p>
         </v-list-item-subtitle>
       </v-list-item-content>
 

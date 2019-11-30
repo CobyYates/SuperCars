@@ -42,20 +42,5 @@ export default {
 </script>
 
 <style>
-/*.slide-enter-active {
-  animation: slide-in 2000ms ease-in forwards;
-}
 
-.slide-leave-active {
-  animation: slide-out 2000ms reverse;
-}
-
-@keyframes slide-out {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}*/
 </style>

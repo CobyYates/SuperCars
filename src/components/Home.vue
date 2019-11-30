@@ -25,7 +25,7 @@
         <v-col align="center">
             <h3>Step 3</h3>
             <p>Hire helper</p>
-            <p><i class="fas fa-users"></i></p>
+            <p><i class="fas fa-user"></i></p>
         </v-col>
     </v-row>
 
@@ -36,6 +36,7 @@
             src="http://ddaudio.com/wp-content/uploads/2016/01/carbonfiber-header-black-1.jpg">
             <v-row align="center">
                 <v-col align="center">
+                    <h2 class="mb-10">HAVE A DREAM GARAGE?</h2>
                     <v-btn to="/build" exact large color="teal accent-4">START BUILDING</v-btn>
                 </v-col>
             </v-row>

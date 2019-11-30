@@ -1,17 +1,11 @@
 <template>
-  <v-container>
-    <v-row>
-      <!-- <transition name="fade"> -->
+  <v-container class="d-flex justify-center">
         <div
-          class="px-4 d-flex justify-center"
           v-for="car in cars"
           :key="car.model"
         >
           <app-car :car="car"></app-car>
-          <!-- <v-btn text @click="show = !show">Remove</v-btn> -->
         </div>
-      <!-- </transition> -->
-    </v-row>
   </v-container>
 </template>
 
@@ -21,7 +15,6 @@ import Car from "./Car";
 export default {
   props: ["cars"],
   data: () => ({
-    // show: true
   }),
   components: {
     "app-car": Car,
@@ -30,10 +23,5 @@ export default {
 </script>
 
 <style>
-/* .fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-} */
+
 </style>

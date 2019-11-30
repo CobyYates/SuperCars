@@ -9,13 +9,12 @@
       <v-col xs="1" sm="6" md="4" lg="3" xl="2" v-for="car in cars">
         <app-card :car="car"></app-card>
         <div class="flex-grow-1">
-          <!-- <v-btn class="mt-4" small color="teal accent-4" @click="selectVehicle">Add to Garage</v-btn> -->
         </div>
       </v-col>
     </v-row>
     <v-row>
       <v-col class="d-flex justify-center mb-12 pb-12">
-        <v-btn to="/build/people" color="teal">NEXT STEP > HIRE DRIVER</v-btn>
+        <v-btn to="/build/people" class="mt-12 mb-0" color="teal accent-4">NEXT STEP > HIRE DRIVER</v-btn>
       </v-col>
     </v-row>
   </v-content>

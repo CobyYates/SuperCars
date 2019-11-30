@@ -22,6 +22,10 @@
 
         <v-divider class="teal darken-3" vertical></v-divider>
 
+        <v-btn to="/build/complete" exact text color="teal accent-3" v-if="this.$store.state.selectedHelper.length === 1">MY GARAGE</v-btn>
+
+        <v-divider class="teal darken-3" vertical></v-divider>
+
         <v-btn to="/contact" exact text color="teal accent-3">CONTACT</v-btn>
       </v-toolbar-items>
     </v-toolbar>
