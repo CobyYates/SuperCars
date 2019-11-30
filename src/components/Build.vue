@@ -1,47 +1,14 @@
 <template>
   <div>
     <v-row class="back test builder">
-      <v-col sm="10" class="pl-6">
-        <v-btn
-          class="sliderDiv"
-          color="teal teal lighten-2"
-          small
-          @click="show = !show"
-          ><</v-btn
-        >
-        <router-view v-model="activePlan"></router-view>
+      <v-col sm="12" class="px-6">
+        <transition name="fade">
+          <router-view v-model="activePlan"></router-view>
+        </transition>
         <v-row>
-            <v-col class="bottom"> 
-            </v-col>
-          </v-row>
+          <v-col class="bottom"> </v-col>
+        </v-row>
       </v-col>
-      <!-- <transition name="slide" mode="in"> -->
-        <v-col v-if="show" class="sidebar teal lighten-2">
-          <v-row>
-            <v-col class="d-flex flex-column">
-              <v-row>
-                <v-col class="d-flex flex-column align-center">
-                  <p>Your build will be saved here</p>
-                  <v-img
-                    src="../assets/Garage.png"
-                    width="150"
-                    class="mx-auto mt-3"
-                  ></v-img>
-                  <h2>Garage Size: {{ this.$store.state.selectedSize[0].size }}</h2>
-                  <h2 class="car">
-                    <!-- Cars: {{ this.$store.state.selectedCars[0] }} -->
-                    <!-- {{ this.$store.state.selectedCars[0] }} -->
-                  </h2>
-                  <h2>
-                    Helper: {{ this.$store.state.selectedHelper[0].name }}
-                    {{ this.$store.state.selectedHelper[0].surname }}
-                  </h2>
-                </v-col>
-              </v-row>
-            </v-col>
-          </v-row>
-        </v-col>
-      <!-- </transition> -->
     </v-row>
   </div>
 </template>
@@ -72,25 +39,19 @@ export default {
 </script>
 
 <style scoped>
-.sliderDiv {
-  /* position: relative;
-  left: -200px; */
+.fade-enter-active {
+  /* transition: opacity 2s; */
+  transform: translateY(100%);
+}
+.fade-enter {
+  opacity: 0;
 }
 
-.slide-enter-active {
-  animation: slide-in 1000ms ease-in forwards;
+.fade-leave-active {
+  /* transition: opacity .5s; */
+  transform: translateY(50%);
 }
-
-.slide-leave-active {
-  animation: slide-in 1000ms reverse;
-}
-
-@keyframes slide-in {
-  0% {
-    transform: translateX(100%);
-  }
-  50% {
-    transform: translateX(100%);
-  }
+.fade-leave-to {
+  opacity: 1;
 }
 </style>

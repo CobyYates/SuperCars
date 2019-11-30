@@ -42,9 +42,9 @@
           </v-card-text>
         </div>
       </v-expand-transition>
-      <v-btn class="mt-4" small color="teal accent-4" @click="selectVehicle"
-        >Add to Garage</v-btn
-      >
+      <div class="d-flex justify-center pb-4">
+        <v-btn class="mt-4" large small color="teal accent-4" @click="selectVehicle">Add to Garage</v-btn>
+      </div>      
     </v-card>
   </v-hover>
 </template>
@@ -80,7 +80,7 @@ export default {
 
 <style scoped>
 .carTitle {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 </style>

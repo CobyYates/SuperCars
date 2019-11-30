@@ -19,7 +19,7 @@
     <v-row>
       <v-col class="d-flex justify-center">
         <!-- Add function to state for size -->
-        <v-btn to="/build/cars" color="teal">NEXT STEP > CARS</v-btn>
+        <v-btn to="/build/cars" color="teal accent-4">NEXT STEP > CARS</v-btn>
       </v-col>
     </v-row>
   </v-content>

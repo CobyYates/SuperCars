@@ -6,7 +6,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col sm="3" v-for="car in cars">
+      <v-col xs="1" sm="6" md="4" lg="3" xl="2" v-for="car in cars">
         <app-card :car="car"></app-card>
         <div class="flex-grow-1">
           <!-- <v-btn class="mt-4" small color="teal accent-4" @click="selectVehicle">Add to Garage</v-btn> -->
