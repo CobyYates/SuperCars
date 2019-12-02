@@ -16,7 +16,7 @@
         </v-list-item>
 
         <v-card-actions class="d-flex justify-center">
-          <v-btn text @click="removeCar">Remove</v-btn>
+          <v-btn text color="teal accent-6" @click="removeCar">Remove</v-btn>
         </v-card-actions>
     </v-card>
 </template>

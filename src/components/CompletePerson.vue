@@ -1,26 +1,28 @@
 <template>
-  <v-card class="mx-auto mb-12" max-width="400" dark outlined>
-    <v-list-item three-line>
-      <v-list-item-content>
-        <div class="overline mb-4">Hired Helper</div>
-        <v-list-item-title class="headline mb-1">
-          {{ this.$store.state.selectedHelper[0].name }}
-          {{ this.$store.state.selectedHelper[0].surname }}</v-list-item-title>
-        <v-list-item-subtitle>
-            <p>From: {{ this.$store.state.selectedHelper[0].region }} </p>
-            <p>Age: {{ this.$store.state.selectedHelper[0].age }}</p>
-        </v-list-item-subtitle>
-      </v-list-item-content>
-
-      <v-list-item-avatar tile size="80">
-        <v-img :src="this.$store.state.selectedHelper[0].photo"></v-img>
-      </v-list-item-avatar>
-    </v-list-item>
-  </v-card>
+  <div class="d-flex justify-center flex-column align-center">
+    <v-avatar width="70%" height="70%">
+      <img :src="this.$store.state.selectedHelper[0].photo">
+    </v-avatar>
+    <v-list-item-content class="text-center">
+      <v-list-item-title class="display-1 mb-1">
+        Hired Helper
+      </v-list-item-title>
+      <v-list-item-subtitle>
+        <p class="headline">{{ this.$store.state.selectedHelper[0].name }}
+        {{ this.$store.state.selectedHelper[0].surname }}</p>
+        <p class="subtitle-1">From: {{ this.$store.state.selectedHelper[0].region }}</p>        
+        <p class="subtitle-1">Age: {{ this.$store.state.selectedHelper[0].age }}</p>
+      </v-list-item-subtitle>
+    </v-list-item-content>
+  </div>
 </template>
 
 <script>
 export default {};
 </script>
 
-<style></style>
+<style>
+v-img {
+  border-radius: 50px;
+}
+</style>

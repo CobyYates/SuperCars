@@ -20,7 +20,7 @@
 
         <v-btn to="/build" exact text color="teal accent-3">BUILD GARAGE</v-btn>
 
-        <v-divider class="teal darken-3" vertical></v-divider>
+        <v-divider class="teal darken-3" vertical v-if="this.$store.state.selectedHelper.length === 1"></v-divider>
 
         <v-btn to="/build/complete" exact text color="teal accent-3" v-if="this.$store.state.selectedHelper.length === 1">MY GARAGE</v-btn>
 
