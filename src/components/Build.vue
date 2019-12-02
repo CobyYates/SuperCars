@@ -40,15 +40,12 @@ export default {
 
 <style scoped>
 .fade-enter-active {
-  /* transition: opacity 2s; */
   transform: translateY(100%);
 }
 .fade-enter {
   opacity: 0;
 }
-
 .fade-leave-active {
-  /* transition: opacity .5s; */
   transform: translateY(50%);
 }
 .fade-leave-to {

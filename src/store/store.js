@@ -10,12 +10,6 @@ export default new Vuex.Store({
         selectedCars: ['test'],
         selectedHelper: []
     },
-    mutations: {
-
-    },
-    actions: {
-
-    },
     getters: {
         carsList: state => {
             return state.selectedCars;
