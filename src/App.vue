@@ -41,8 +41,8 @@ export default {
 
 /*
 TO DO:  
-- Style buttons on car cards
 - Scroll to top of page when changing from garage -> cars -> person
-- Change color of buttons for moving between building pages 
+- Add form validation with login (Add's their name to the top)
+- Add redirect after they submit their contact details
 - Add total cost of your cars in the garage
 */

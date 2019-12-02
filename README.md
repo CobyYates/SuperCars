@@ -1,7 +1,7 @@
 # Vue.js project using Vuetify
 
 ## Netlify Link
-[Check out the site](https://car-garage.netlify.com/)
+[Check out the site on Netlify](https://car-garage.netlify.com/)
 
 
 ## Effectively use conditional logic and JavaScript array methods to render large lists.
@@ -14,11 +14,11 @@ The app.vue file is the main file containing all other components. All content i
 ```javascript
 <template>
   <v-app>
-    <app-top-nav></app-top-nav>
+    <app-top-nav/>
     <v-content>
       <v-row>
         <v-col class="pb-0 pt-0">
-          <router-view></router-view>
+          <router-view/>
         </v-col>
       </v-row>
     </v-content>
@@ -36,10 +36,10 @@ The app.vue file is the main file containing all other components. All content i
 The app uses props and local store. The [store.js](src\store\store.js) file contains 3 arrays which store all the data throughout the app. When a garage, car or person is selected, these values are pushed onto those arrays.
 ```javascript
 if (this.$store.state.selectedSize[0].size > this.$store.state.selectedCars.length) {
-        this.$store.state.selectedCars.push(this.car);
-      } else if (this.$store.state.selectedSize[0].size <= this.$store.state.selectedCars.length) {
-        alert('Too many vehicles')
-      }
+      this.$store.state.selectedCars.push(this.car);
+    } else if (this.$store.state.selectedSize[0].size <= this.$store.state.selectedCars.length) {
+      alert('Too many vehicles')
+    }
 ```
 
 ## Present a form for user input that provides useful form validation and feedback.
@@ -86,7 +86,7 @@ getPeople() {
 ```
 
 ## Provide at least 3 different routes with navigation between them using vue-router.
-The top navigation has 3 different pages that can be selected. In the [vue-router](src\routes.js) page, all three routes are all defined
+The top navigation has 3 different pages that can be selected. In the [vue-router](./src/routes.js) page, all three routes are all defined
 ```javascript
 export const routes = [
     { path: '', component: Home },

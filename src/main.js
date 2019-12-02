@@ -11,7 +11,10 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
   routes,
-  mode: 'history'
+  mode: 'history',
+  scrollBehavior () {
+    return { x: 0, y: 0 }
+  }
 })
 
 Vue.filter('currency', (value) => {
@@ -24,12 +27,3 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
-
-/* 
-Setup navigation with names and path (Nov 4 time: 3:37 in Zoom)
-{
-  path: '/remote'
-  name: 'remote'
-  components: remote
-}
-*/

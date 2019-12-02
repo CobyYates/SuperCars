@@ -65,10 +65,10 @@ export default {
   },
   methods: {
     selectVehicle() {
-      if (this.$store.state.selectedCars[0] === "test") {
-        this.$store.state.selectedCars.pop();
-        this.$store.state.selectedCars.push(this.car);
-      } else if (this.$store.state.selectedSize[0].size > this.$store.state.selectedCars.length) {
+      // if (this.$store.state.selectedCars[0] === "test") {
+        // this.$store.state.selectedCars.pop();
+        // this.$store.state.selectedCars.push(this.car);
+      if (this.$store.state.selectedSize[0].size > this.$store.state.selectedCars.length) {
         this.$store.state.selectedCars.push(this.car);
       } else if (this.$store.state.selectedSize[0].size <= this.$store.state.selectedCars.length) {
         alert('Too many vehicles')

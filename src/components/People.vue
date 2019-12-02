@@ -25,12 +25,12 @@
               </v-card>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col>
+      <v-row class="pt-12">
           <v-col class="d-flex justify-center">
-              <v-btn to="complete" color="teal accent-4" class="my-12">SAVE MY GARAGE</v-btn>
+            <div class="mt-12">
+              <v-btn to="complete" color="teal accent-4">SAVE MY GARAGE</v-btn>
+            </div>
           </v-col>
-        </v-col>
       </v-row>
     </v-container>
 </template>
@@ -74,6 +74,6 @@ export default {
 
 <style scoped>
 .people {
-  height: 40vh;
+  /* height: 40vh; */
 }
 </style>

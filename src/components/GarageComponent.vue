@@ -2,12 +2,12 @@
   <v-col>
     <v-card
       class="mx-auto"
-      :class="{'cyan darken-2' :this.activePlan === this.planName}"
+      :class="{'teal darken-5' :this.activePlan === this.planName}"
       @keydown.space="updateActivePlan"
       max-width="344"
       @click="updateActivePlan"
     >
-      <v-img src="../assets/Garage.png" width="60%" class="mx-auto mt-3"></v-img>
+      <v-img src="../assets/Garage.png" width="55%" class="mx-auto mt-3"></v-img>
       <v-card-title class="mx-auto d-flex justify-center">{{ this.planName }} Vehicles</v-card-title>
     </v-card>
   </v-col>

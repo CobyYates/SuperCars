@@ -3,7 +3,7 @@
         <v-list-item three-line>
           <v-list-item-content>
             <div class="overline mb-2">Car</div>
-            <v-list-item-title class="headline mb-1"
+            <v-list-item-title class="headline mb-1 teal--text"
               >{{ car.make }} {{ car.model }}</v-list-item-title>
             <v-list-item-subtitle
               >Your vehicle costs {{ car.price | currency }}</v-list-item-subtitle
