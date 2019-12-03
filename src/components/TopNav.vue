@@ -7,11 +7,12 @@
         </a>
       </router-link>
 
-      <v-toolbar-title>The Garage</v-toolbar-title>
+      <v-toolbar-title v-if="this.$store.state.user.length === 1">The Garage of {{ this.$store.state.user[0].first }}</v-toolbar-title>
 
       <div class="flex-grow-1"></div>
 
       <v-toolbar-items>
+
         <v-divider class="teal darken-3" vertical></v-divider>
 
         <v-btn to="/" exact text color="teal accent-3">HOME</v-btn>

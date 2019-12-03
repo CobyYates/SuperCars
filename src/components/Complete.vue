@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col class="d-flex justify-center text-center">
-        <h1>Here is your completed garage build</h1>
+        <h1>Here is your completed garage build {{ this.$store.state.user[0].first }} {{ this.$store.state.user[0].last }}</h1>
       </v-col>
     </v-row>
     <v-row class="d-flex justify-center flex-row" width="100%">
