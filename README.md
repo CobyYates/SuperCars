@@ -33,7 +33,7 @@ The app.vue file is the main file containing all other components. All content i
 ```
 
 ## Allow communication between components using props, custom events, or local store.
-The app uses props and local store. The [store.js](src\store\store.js) file contains 3 arrays which store all the data throughout the app. When a garage, car or person is selected, these values are pushed onto those arrays.
+The app uses props and local store. The [store.js](./src/store/store.js) file contains 3 arrays which store all the data throughout the app. When a garage, car or person is selected, these values are pushed onto those arrays.
 ```javascript
 if (this.$store.state.selectedSize[0].size > this.$store.state.selectedCars.length) {
       this.$store.state.selectedCars.push(this.car);
@@ -43,7 +43,7 @@ if (this.$store.state.selectedSize[0].size > this.$store.state.selectedCars.leng
 ```
 
 ## Present a form for user input that provides useful form validation and feedback.
-The user form is found on the [contact page](https://car-garage.netlify.com/contact)
+The user form is found on the [contact page](./src/components/Form.vue)
 ```javascript
 
 ```
@@ -101,7 +101,7 @@ export const routes = [
 ```
 
 ## Manage your application's state using vuex.
-Using Vuex, the state management for the each build is saved and stored in the [store.js](src\store\store.js) file. Each change is saved by pushing data into an array declared in the store.
+Using Vuex, the state management for the each build is saved and stored in the [store.js](./src/store/store.js) file. Each change is saved by pushing data into an array declared in the store.
 ```javascript
 this.$store.state.selectedSize[0].size = this.planName
 ```

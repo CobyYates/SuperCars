@@ -8,7 +8,8 @@ export default new Vuex.Store({
     state: {
         selectedSize: [{"size": 2}],
         selectedCars: [],
-        selectedHelper: []
+        selectedHelper: [],
+        user: []
     },
     getters: {
         carsList: state => {

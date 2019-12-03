@@ -1,5 +1,6 @@
 <template>
       <v-content>
+          <app-signIn v-if="this.$store.state.user.length === 0"></app-signIn>
     <v-row>
         <v-col class="pt-0 pb-12">
             <v-parallax
@@ -48,8 +49,11 @@
 </template>
 
 <script>
-
+import SignIn from './SignIn.vue'
 export default {
+    components: {
+        'app-signIn': SignIn
+    }
 };
 </script>
 
