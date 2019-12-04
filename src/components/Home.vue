@@ -7,8 +7,8 @@
             height="500"
             src="https://d1i1eo6qmdfmdv.cloudfront.net/upload/site/pages/newslider_otherpages/DSC01639.jpg"
             justify="center" align="center"
-            ><h1 class="text-center">The Garage</h1>
-            <h2 class="text-center">where you build your dream garage</h2></v-parallax>
+            ><h1 class="text-center display-3">The Stig</h1>
+            <h2 class="text-center headline">where you build your dream garage</h2></v-parallax>
         </v-col>
     </v-row>
 

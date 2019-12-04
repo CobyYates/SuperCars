@@ -5,6 +5,7 @@ import Cars from './components/Cars.vue'
 import People from './components/People.vue'
 import Complete from './components/Complete.vue'
 import Contact from './components/Form.vue'
+import FormConfirm from './components/FormConfirm.vue'
 
 export const routes = [
     { path: '', component: Home },
@@ -14,6 +15,6 @@ export const routes = [
         { path: '/build/people', component: People },
     ] },
     { path: '/build/complete', component: Complete},
-    { path: '/contact', component: Contact },
-    
+    { path: '/contact', component: Contact}, 
+    { path: '/confirmation', component: FormConfirm },    
 ]

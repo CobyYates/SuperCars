@@ -7,7 +7,7 @@
         </a>
       </router-link>
 
-      <v-toolbar-title v-if="this.$store.state.user.length === 1">The Garage of {{ this.$store.state.user[0].first }}</v-toolbar-title>
+      <v-toolbar-title v-if="this.$store.state.user.length === 1">Welcome {{ this.$store.state.user[0].first }}</v-toolbar-title>
 
       <div class="flex-grow-1"></div>
 

@@ -10,9 +10,10 @@
         <v-list-item-subtitle>{{ car.price | currency }}</v-list-item-subtitle>
       </v-card-title>
 
-      <v-card-actions>
-        <v-btn icon @click="show = !show">
-          <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
+      <v-card-actions class="d-flex justify-center">
+        <v-btn text icon @click="show = !show" class="chevron">
+          <v-icon class="teal--text">{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
+          Specifications
         </v-btn>
       </v-card-actions>
 
@@ -65,9 +66,6 @@ export default {
   },
   methods: {
     selectVehicle() {
-      // if (this.$store.state.selectedCars[0] === "test") {
-        // this.$store.state.selectedCars.pop();
-        // this.$store.state.selectedCars.push(this.car);
       if (this.$store.state.selectedSize[0].size > this.$store.state.selectedCars.length) {
         this.$store.state.selectedCars.push(this.car);
       } else if (this.$store.state.selectedSize[0].size <= this.$store.state.selectedCars.length) {

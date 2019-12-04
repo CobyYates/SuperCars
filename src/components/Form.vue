@@ -1,7 +1,7 @@
 <template>
 <v-row align="center">
   <v-col align="center">
-    <form class="mx-auto pt-12">
+    <v-form class="mx-auto pt-12" v-model="valid">
     <v-text-field
       v-model="name"
       :error-messages="nameErrors"
@@ -21,19 +21,26 @@
       @input="$v.email.$touch()"
       @blur="$v.email.$touch()"
     ></v-text-field>
+    <v-textarea
+      name="input-7-1"
+      filled
+      label="Your message"
+      auto-grow
+      v-model="message"
+    ></v-textarea>
     <v-checkbox
       v-model="checkbox"
       :error-messages="checkboxErrors"
-      label="New Tesla Truck is a Joke?"
+      label="Tesla Cybertruck is ugly"
       class="pb-12"
       required
       @change="$v.checkbox.$touch()"
       @blur="$v.checkbox.$touch()"
     ></v-checkbox>
 
-    <v-btn class="mr-4" @click="submit">submit</v-btn>
-    <v-btn @click="clear">clear</v-btn>
-  </form>
+    <v-btn class="mr-4" @click="submit(), add()" outlined color="success" :disabled="!valid">submit</v-btn>
+    <v-btn @click="clear" outlined color="warning">clear</v-btn>
+  </v-form>
   </v-col>
 </v-row>
   
@@ -60,7 +67,9 @@ import { required, maxLength, email } from 'vuelidate/lib/validators'
       name: '',
       email: '',
       select: null,
+      message: null,
       checkbox: false,
+      valid: true
     }),
 
     computed: {
@@ -93,14 +102,25 @@ import { required, maxLength, email } from 'vuelidate/lib/validators'
     },
 
     methods: {
-      submit () {
+      submit() {
         this.$v.$touch()
+      },
+      add() {
+        const contact = {
+          name: this.name,
+          email: this.email,
+          message: this.message
+        }
+        this.$store.state.contact.pop()
+        this.$store.state.contact.push(contact)
+        // route to confirmation page
       },
       clear () {
         this.$v.$reset()
         this.name = ''
         this.email = ''
         this.select = null
+        this.message = null
         this.checkbox = false
       },
     },

@@ -3,10 +3,9 @@
     <v-row>
       <v-col class="d-flex justify-center my-6">
         <h2>Select Your Garage Size</h2>
-        <!-- nested routes for page to page (video 244) -->
       </v-col>
     </v-row>
-    <v-row>
+    <v-row class="col">
       <app-garage planName="2" v-model="activePlan"></app-garage>
       <app-garage planName="3" v-model="activePlan"></app-garage>
       <app-garage planName="4" v-model="activePlan"></app-garage>
