@@ -1,4 +1,5 @@
 <template>
+<!-- <div> -->
   <v-container>
     <v-row>
       <v-col class="d-flex justify-center text-center">
@@ -22,7 +23,13 @@
         </v-container>
       </v-col>
     </v-row>
+    
   </v-container>
+  <!-- <v-container v-else-if="this.$store.state.user[0].first === 'test'">
+      <v-btn class="pt-12">Test</v-btn>
+  </v-container> -->
+<!-- </div> -->
+  
 </template>
 
 <script>
