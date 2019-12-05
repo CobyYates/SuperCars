@@ -49,6 +49,7 @@
 <script>
 import { validationMixin } from 'vuelidate'
 import { required, maxLength, email } from 'vuelidate/lib/validators'
+// import route from '../routes'
 
   export default {
     mixins: [validationMixin],
@@ -69,7 +70,7 @@ import { required, maxLength, email } from 'vuelidate/lib/validators'
       select: null,
       message: null,
       checkbox: false,
-      valid: true
+      valid: true,
     }),
 
     computed: {
@@ -114,6 +115,9 @@ import { required, maxLength, email } from 'vuelidate/lib/validators'
         this.$store.state.contact.pop()
         this.$store.state.contact.push(contact)
         // route to confirmation page
+        // this.$route.push('/')
+        // this.router.push('/confirmation');
+        // router.go('confirmation')
       },
       clear () {
         this.$v.$reset()

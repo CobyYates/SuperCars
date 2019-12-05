@@ -93,14 +93,15 @@ export default {
       {
         this.$store.state.selectedSize[0].size--
       }
-      else if(this.$store.state.selectedSize[0].size <= this.$store.state.selectedCars.length) {
-        this.snackbar = true
-        this.text = "Your garage size must not be smaller than the number of cars selected"
-      }
       else if(this.$store.state.selectedSize[0].size === 0) {
         this.snackbar = true
         this.text = "Cannot have a negative number"
       }
+      else if(this.$store.state.selectedSize[0].size <= this.$store.state.selectedCars.length) {
+        this.snackbar = true
+        this.text = "Your garage size must not be smaller than the number of cars selected"
+      }
+      
     }
 }
 }

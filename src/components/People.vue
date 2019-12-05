@@ -31,7 +31,16 @@
               <v-btn to="complete" color="teal accent-4">SAVE MY GARAGE</v-btn>
             </div>
           </v-col>
-      </v-row>
+      </v-row>   
+
+      <div class="text-center ma-2">
+        <v-snackbar v-model="snackbar">
+          {{ text }}
+          <v-btn color="red" text @click="snackbar = false">
+            Close
+          </v-btn>
+        </v-snackbar>
+      </div>
     </v-container>
 </template>
 
@@ -42,6 +51,8 @@ export default {
     data() {
         return {
             people: [],
+            test: '',
+            snackbar: false
         }
     },
     methods: {
@@ -61,11 +72,14 @@ export default {
           if(this.$store.state.selectedHelper <= 0) {
             this.$store.state.selectedHelper.pop()
             this.$store.state.selectedHelper.push(person)
-            console.log(this.$store.state.selectedHelper)
+            this.snackbar = true
+            this.text = 'Person Hired'
           }
           else {
             this.$store.state.selectedHelper.pop()
             this.$store.state.selectedHelper.push(person)
+            this.snackbar = true
+            this.text = 'Person Hired'
           }
         },
     }
