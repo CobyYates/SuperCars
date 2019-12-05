@@ -45,8 +45,18 @@
       </v-expand-transition>
       <div class="d-flex justify-center pb-4">
         <v-btn class="mt-4" large small color="teal accent-4" @click="selectVehicle">Add to Garage</v-btn>
-      </div>      
+      </div>   
+      <div class="text-center ma-2">
+        <v-snackbar v-model="snackbar">
+          {{ text }}
+          <v-btn color="red" text @click="snackbar = false">
+            Close
+          </v-btn>
+        </v-snackbar>
+      </div>    
     </v-card>
+
+    
   </v-hover>
 </template>
 
@@ -60,6 +70,8 @@ export default {
     dialog: false,
     emptyIcon: "mdi-garage-outline",
     fullIcon: "mdi-garage",
+    text: '',
+    snackbar: false
   }),
   components: {
     "app-card-expand": CardExpand
@@ -68,8 +80,11 @@ export default {
     selectVehicle() {
       if (this.$store.state.selectedSize[0].size > this.$store.state.selectedCars.length) {
         this.$store.state.selectedCars.push(this.car);
+        this.snackbar = true
+        this.text = `${ this.car.make } ${ this.car.model } added to your garage`
       } else if (this.$store.state.selectedSize[0].size <= this.$store.state.selectedCars.length) {
-        alert('Too many vehicles')
+        this.snackbar = true
+        this.text = "Too many vehicles"
       }
     }
   }

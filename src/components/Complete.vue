@@ -41,10 +41,9 @@
     </v-row>
 
     <div class="text-center ma-2">
-    <!-- <v-btn dark @click="snackbar = true">Open Snackbar</v-btn> -->
     <v-snackbar v-model="snackbar">
       {{ text }}
-      <v-btn color="pink" text @click="snackbar = false">
+      <v-btn color="red" text @click="snackbar = false">
         Close
       </v-btn>
     </v-snackbar>
@@ -97,7 +96,6 @@ export default {
       else if(this.$store.state.selectedSize[0].size <= this.$store.state.selectedCars.length) {
         this.snackbar = true
         this.text = "Your garage size must not be smaller than the number of cars selected"
-        this.text = ""
       }
       else if(this.$store.state.selectedSize[0].size === 0) {
         this.snackbar = true
