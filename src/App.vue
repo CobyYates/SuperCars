@@ -40,7 +40,9 @@ export default {
 </style>
 
 /*
-TO DO:  
+TO DO:
+- Buttons on complete to route to pages or add more to each value
+- Array helper methods (filter, map, reduce)
 - Scroll to top of page when changing from garage -> cars -> person
 - Add form validation with login (Add's their name to the top)
 - Add redirect after they submit their contact details
