@@ -114,10 +114,7 @@ import { required, maxLength, email } from 'vuelidate/lib/validators'
         }
         this.$store.state.contact.pop()
         this.$store.state.contact.push(contact)
-        // route to confirmation page
-        // this.$route.push('/')
-        // this.router.push('/confirmation');
-        // router.go('confirmation')
+        this.$router.push({name:'confirm'})
       },
       clear () {
         this.$v.$reset()

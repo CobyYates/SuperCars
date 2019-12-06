@@ -16,5 +16,5 @@ export const routes = [
     ] },
     { path: '/build/complete', component: Complete},
     { path: '/contact', component: Contact}, 
-    { path: '/confirmation', component: FormConfirm },    
+    { path: '/confirmation', name: 'confirm', component: FormConfirm },    
 ]
