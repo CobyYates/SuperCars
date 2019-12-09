@@ -55,7 +55,7 @@ import { required, maxLength, email } from 'vuelidate/lib/validators'
     mixins: [validationMixin],
 
     validations: {
-      name: { required, maxLength: maxLength(10) },
+      name: { required, maxLength: maxLength(50) },
       email: { required, email },
       checkbox: {
         checked (val) {
