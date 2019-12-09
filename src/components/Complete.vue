@@ -6,7 +6,7 @@
           <h1>
             Here is your completed garage build                
             {{ this.$store.state.user[0].first }}
-            {{ carValue | currency }}
+            <!-- {{ carValue | currency }} -->
           </h1>
         </v-col>
       </v-row>
@@ -86,9 +86,9 @@ export default {
     selectedCars() {
       return this.$store.state.selectedCars;
     },
-    carValue() {
-      return this.$store.getters.carValue
-    }
+    // carValue() {
+    //   return this.$store.getters.carValue
+    // }
   },
   methods: {
     lengths() {

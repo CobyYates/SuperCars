@@ -16,10 +16,10 @@ export default new Vuex.Store({
         carsList: state => {
             return state.selectedCars;
         },
-        carValue(state) {
-            return state.selectedCars.reduce(function(current, elm) {
-                return elm.price += current
-            }, 0)
-        }
+        // carValue(state) {
+        //     return state.selectedCars.reduce(function(current, elm) {
+        //         return elm.price += current
+        //     }, 0)
+        // }
     }
 })
