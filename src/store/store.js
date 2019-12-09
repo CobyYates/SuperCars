@@ -15,6 +15,11 @@ export default new Vuex.Store({
     getters: {
         carsList: state => {
             return state.selectedCars;
+        },
+        carValue(state) {
+            return state.selectedCars.reduce(function(current, elm) {
+                return elm.price += current
+            }, 0)
         }
     }
 })

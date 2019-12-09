@@ -51,7 +51,7 @@ export default {
     data() {
         return {
             people: [],
-            test: '',
+            text: '',
             snackbar: false
         }
     },
